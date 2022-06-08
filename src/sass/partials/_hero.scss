@@ -1,0 +1,108 @@
+@import '../utils/constants';
+
+.hero {
+    background-image: linear-gradient(rgba(0, 16, 56, 0.45), rgba(0, 16, 56, 0.45)), url('../img/hero-summer-wallpaper-min.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 203px 0 30px 0;
+}
+.hero-container {
+    flex-direction: column;
+}
+.main-hero-content {
+display: flex;
+}
+.hero-tittle-panel-wrapper {
+    margin-right: 126px;
+}
+
+h1 {
+    color: $whiteColor;
+    padding: 26px 0;
+}
+.hero-about {
+    max-width: 605px;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    margin-top: 25px;
+    color: $whiteColor;
+}
+.hero-btn {
+    padding: 12px 80px;
+    background: linear-gradient(180deg, $primaryColor 0%, #95ECFF 0.01%, #B3F1FF 100%);
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 1.15;
+    border: none;
+    cursor: pointer;
+    margin-top: 50px;
+    &:active {
+        transform: scale(0.9);
+    }
+}
+
+.hero-weather-panel-wrapper {
+    position: relative;
+}
+.weather-panel-city-wrapper {
+    display: flex;
+    margin-bottom: 134px;
+}
+.city-icon {
+    fill: $primaryColor;
+    cursor: pointer;
+    &:hover {
+        fill: #c81313;
+    }
+}
+.city-tittle {
+    font-size: 25px;
+    line-height: 1.16;
+    color: $whiteColor;
+    margin-left: 14px;
+}
+.current-temperature-wrapper {
+    position: relative;
+}
+.current-temperature {
+    font-weight: 500;
+    font-size: 90px;
+    line-height: 1.14;
+    color: $whiteColor;
+}
+.sun-icon {
+    position: absolute;
+    bottom: 55;
+    left: 110;
+    fill: #FFCA22;
+}
+.social-contacts-hero-content {
+    @include dfcc;
+}
+.stripe-decor {
+    height: 1px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+.social-links-list {
+    @include dfcc;
+    margin: 0 56px;
+}
+.social-links-item {
+    &:not(:last-child) {
+        margin-right: 56px;
+    }
+}
+.social-link-icon {
+    fill: $whiteColor;
+    &:hover {
+        fill: $socialLinksHover;
+    }
+    &:active {
+        fill: $socialLinksActive;
+        transform: scale(0.9);
+    }
+}

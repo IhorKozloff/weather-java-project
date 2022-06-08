@@ -3,12 +3,121 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
+    <title>W-Clear</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
+    <script type="module" src="./sass/index.css"></script>
   </head>
   <body>
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/example.html"></include>
+    <header>
+      <section class="header-section">
+        <div class="container header-container">
+          <div class="logo-wrapper">
+            <p class="logo"><span>W</span>-Clear</p>
+            <svg class="logo-icon" width="140" height="15">
+              <use href="./img/sprite.svg#icon-logo-arrow-down"></use>
+            </svg>
+          </div>
+          <nav>
+            <ul class="link-list">
+              <li class="link-item">
+                <a href="#" class="item-link">Погода</a>
+              </li>
+              <li class="link-item">
+                <a href="#" class="item-link">Про нас</a>
+              </li>
+              <li class="link-item">
+                <a href="#" class="item-link">Надійність</a>
+              </li>
+              <li class="link-item">
+                <a href="#" class="item-link">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="language-menu">UA</div>
+          <div class="phone-wrapper">
+            <button type="button" class="phone-btn">
+              <svg width="28" height="28">
+                <use href="./img/sprite.svg#icon-phone-tube"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+        
+      </section>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container hero-container">
+          <div class="main-hero-content">
+            <div class="hero-tittle-panel-wrapper">
+              <h1 class="hero-tittle">Погода - <span>планы</span> на будующее</h1>
+              <p class="hero-about">
+                Правдивая погода поможет быстро и без усилий составить планы на будующее, встречи с друзьями или отдых на природе
+              </p>
+              <button type="button" class="hero-btn">Дивитися</button>
+            </div>
+            <div class="hero-weather-panel-wrapper">
+              <div class="weather-panel-city-wrapper">
+                <svg class="city-icon" width="23" height="31">
+                  <use href="./img/sprite.svg#icon-geo-location-icon"></use>
+                </svg>
+                <p class="city-tittle">м.Харків</p>
+              </div>
+              <svg class="sun-icon" width="230" heigh="230">
+                <use href="./img/sprite.svg#icon-sun"></use>
+              </svg>
+              <div class="current-temperature-wrapper">
+                <span class="current-temperature">+15</span>
+                <svg class="degrees-icon" width="20" heigh="20">
+                  <use href="./img/sprite.svg#icon-degress"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="social-contacts-hero-content">
+            <div class="stripe-decor"></div>
+            <ul class="social-links-list">
+              <li class="social-links-item">
+                <a href="#" class="social-link">
+                  <svg class="social-link-icon" width="30" heigh="30">
+                    <use href="./img/sprite.svg#icon-telegram-icon"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-links-item">
+                <a href="#" class="social-link">
+                  <svg class="social-link-icon" width="30" heigh="30">
+                    <use href="./img/sprite.svg#icon-instagram-icon"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-links-item">
+                <a href="#" class="social-link">
+                  <svg class="social-link-icon" width="30" heigh="30">
+                    <use href="./img/sprite.svg#icon-vk-icon"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-links-item">
+                <a href="#" class="social-link">
+                  <svg class="social-link-icon" width="30" heigh="30">
+                    <use href="./img/sprite.svg#icon-facebook-icon"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <div class="stripe-decor"></div>
+          </div>
+        </div>
+      </section>
+      <section class="about">
+        <div class="container">
+          <h2 class="about-tittle">Дружное сообщество</h2>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
   </body>
+  <script type="module" src="./index.js"></script>
 </html>

@@ -1,0 +1,47 @@
+@import "../utils/constants";
+
+
+body{
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #2f2f37;
+}
+
+section {
+    max-width: 1600px;
+    margin: 0 0 110px 0;
+}
+h1 {
+    font-size: 55px;
+    line-height: 1.36;
+    & span {
+        color: $tittlesColoredLight;
+    }
+}
+h2 {
+    font-size: 40px;
+    line-height: 1.15;
+}
+h1,h2{
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+}
+p,span,li {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.container {
+    max-width: 1231px;
+    margin: 0 auto;
+    // background-color: rgb(247, 148, 160);
+    display: flex;
+}
