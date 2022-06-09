@@ -1,0 +1,22 @@
+@import '../../utils/constants';
+
+.link-list {
+    display: flex;
+}
+.link-item {
+    &:not(:last-child) {
+        margin-right: 40px;
+    }
+}
+.item-link {
+    font-size: 18px;
+    line-height: 1.16;
+    text-decoration: none;
+    color: black;
+    &.item-link__color-white {
+        color: $whiteColor;
+    }
+    &:hover {
+        color: #006D85;
+    }
+}

@@ -8,56 +8,6 @@
     align-items: center;
 }
 
-.logo-wrapper {
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 1.13;
-    margin-left: 2px;
-    margin-right: 173px;
-    position: relative;
-    & span {
-        color: #006D85;
-    }
-}
-.logo-icon {
-    position: absolute;
-    bottom: -6;
-    left: -12;
-}
 nav {
     margin-right: 128px;
-}
-.link-list {
-    display: flex;
-}
-.link-item {
-    &:not(:last-child) {
-        margin-right: 40px;
-    }
-}
-.item-link {
-    font-size: 18px;
-    line-height: 1.16;
-    text-decoration: none;
-    color: black;
-    &:hover {
-        color: #006D85;
-    }
-}
-.language-menu {
-    width: 121px;
-    height: 36px;
-    margin-right: 80px;
-    background-color: $smallButton;
-    text-align: center;
-    border-radius: 10px;
-}
-.phone-btn {
-    width: 70px;
-    height: 36px;
-    border: none;
-    background: $smallButton;
-    border-radius: 10px;
-    @include dfcc;
-    cursor: pointer;
 }

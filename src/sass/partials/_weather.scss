@@ -1,0 +1,109 @@
+@import '../utils/constants';
+
+.weather-container {
+    flex-direction: column;
+}
+h2 {
+    margin-bottom: 60px;
+    & span {
+        color: $primaryColorDark;
+    }
+}
+.weather-btn {
+    background: $primaryColorDark;
+    border-radius: 10px;
+    padding: 10px 30px;
+    font-size: 17px;
+    line-height: 20px;
+    color: $whiteColor;
+    border: none;
+    cursor: pointer;
+    &:active {
+        transform: scale(0.9);
+    }
+}
+.city-name-input {
+    width: 269px;
+    margin-left: 93px;
+    padding:13px 0 12px 15px;
+    align-items: center;
+    font-size: 12px;
+    line-height: 1.16;
+    color: $blackColor;
+    opacity: 0.5;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 2px;
+    border: none;
+}
+.weather-bar {
+    padding-bottom: 28px;
+    display: flex;
+    margin-top: 60px;
+}
+.weather-bar-item {
+    width: 270px;
+    border-radius: 20px;
+    padding: 24px 55px 30px 55px;
+    @include dfcc;
+    flex-direction: column;
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+
+    box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 20px;
+}
+.date {
+    font-size: 35px;
+    line-height: 1.14;
+}
+.day {
+    font-size: 15px;
+    line-height: 17px;
+    color: $primaryColorDark;
+}
+.weather-icnon {
+    margin-top: 23px;
+    fill: $sunColor;
+}
+.temperature-to-time-list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 23px;
+}
+.temperature-to-time-list-item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $blackColor;
+    & span {
+        display: block;
+    }
+    &:not(:last-child) {
+        margin-bottom: 14px;
+    }
+}
+
+.time {
+    font-size: 15px;
+    line-height: 17px;
+    opacity: 0.6;
+}
+.temperature-to-time {
+    font-size: 25px;
+    line-height: 29px;
+    color: #000749;
+}
+.temperature-wrapper {
+    position: relative;
+}
+.weather-degrees-icon {
+    fill: red;
+    position: absolute;
+    top: 3;
+    right: -10;
+}

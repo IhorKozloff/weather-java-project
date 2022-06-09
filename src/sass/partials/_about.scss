@@ -1,0 +1,38 @@
+@import '../utils/constants';
+
+.about-container {
+    flex-direction: column;
+    
+}
+h2 {
+ & span {
+    color: $primaryColorDark;;
+ }
+}
+.about-content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+.ppl-image-wrapper {
+    border-radius: 20px;
+    height: fit-content;
+    overflow: hidden;
+}
+.about-text-wrapper {
+    width: 570px;
+    margin-top: 119px;
+    padding: 31px 26px;
+    background: linear-gradient(110.89deg, rgba(121, 222, 244, 0.32) 6.2%, rgba(121, 222, 244, 0.32) 6.21%, rgba(255, 251, 164, 0.32) 25.48%, rgba(255, 251, 164, 0.32) 40.95%, rgba(121, 222, 244, 0.32) 94.08%);
+    border-radius: 20px;
+   
+}
+.about-text {
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    text-indent: 50px;
+    &:not(:last-child) {
+        margin-bottom: 10px;
+    }
+}

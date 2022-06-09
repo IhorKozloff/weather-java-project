@@ -1,0 +1,32 @@
+@import '../utils/constants';
+
+footer {
+    padding-top: 95px;
+    background-image: linear-gradient(rgba(0, 16, 56, 0.45), rgba(0, 16, 56, 0.45)), url('../img/footer-wall-min.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 0;
+}
+.footer-container {
+    flex-direction: column;
+}
+.footer-text-wrapper {
+    width: 834px;
+}
+.footer-tittle {
+    color: $whiteColor;
+    & span {
+        color: $primaryColor;
+    }
+}
+.footer-text {
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: $whiteColor;
+    text-indent: 50px;
+}
+.footer-navigation-wrapper {
+    display: flex;
+    margin-top: 109px;
+}

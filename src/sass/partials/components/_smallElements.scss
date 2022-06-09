@@ -1,0 +1,49 @@
+@import '../../utils/constants';
+
+
+.logo-wrapper {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1.13;
+    margin-left: 2px;
+    margin-right: 173px;
+    position: relative;
+    & .styled-color-white span{
+        color: $whiteColor;
+    }
+    & span {
+        color: #006D85;
+    }
+}
+
+.logo-icon {
+    position: absolute;
+    bottom: -6;
+    left: -12;
+}
+
+.language-menu {
+    width: 121px;
+    height: 36px;
+    margin-right: 80px;
+    background-color: $smallButton;
+    text-align: center;
+    border-radius: 10px;
+}
+.phone-btn {
+    width: 70px;
+    height: 36px;
+    border: none;
+    background: $smallButton;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    & .phone-btn__color-light {
+        background-color: $primaryColor;
+    }
+    &:active {
+        transform: scale(0.9);
+    }
+}

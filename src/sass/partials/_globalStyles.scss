@@ -9,15 +9,18 @@ body{
     color: #2f2f37;
 }
 
-section {
+header, section {
     max-width: 1600px;
     margin: 0 0 110px 0;
+}
+footer {
+    max-width: 1600px;
 }
 h1 {
     font-size: 55px;
     line-height: 1.36;
     & span {
-        color: $tittlesColoredLight;
+        color: $primaryColor;
     }
 }
 h2 {

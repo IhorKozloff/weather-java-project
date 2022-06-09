@@ -1,0 +1,31 @@
+@import '../../utils/constants';
+
+
+
+.social-contacts-content {
+    @include dfcc;
+}
+.stripe-decor {
+    height: 1px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+.social-links-list {
+    @include dfcc;
+    margin: 0 56px;
+}
+.social-links-item {
+    &:not(:last-child) {
+        margin-right: 56px;
+    }
+}
+.social-link-icon {
+    fill: $whiteColor;
+    &:hover {
+        fill: $socialLinksHover;
+    }
+    &:active {
+        fill: $socialLinksActive;
+        transform: scale(0.9);
+    }
+}
