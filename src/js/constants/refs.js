@@ -7,4 +7,5 @@ export const refs = {
     cityTittleEl: document.querySelector('.city-tittle'),
     currentTemperatureEl: document.querySelector('.current-temperature'),
     weatherDescriptionEl: document.querySelector('.weather-description'),
+    weatherLargeIconEl: document.querySelector('.weather-large-icon')
 }
