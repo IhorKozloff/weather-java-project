@@ -61,13 +61,30 @@
                 <svg class="city-icon" width="23" height="31">
                   <use href="./img/sprite.svg#icon-geo-location-icon"></use>
                 </svg>
-                <p class="city-tittle">м.Харків</p>
+               <div class="city-control-bar">
+                <div class="title-wrapper">
+                  <div class="tittle-text-wrapper" style="display: flex;">
+                  <span class="tittle-city-mark">г.</span>
+                  <p class="city-tittle"></p>
+                  </div>
+                  <button type="button" class="city-changer-btn">
+                    Змінити місто?
+                  </button>
+                </div>
+                <form name="weather-form" class="weather-form hidden" novalidate>
+                  <input type="text" name="city" class="city-name-input" placeholder="Місто - регіон">
+                  <button class="weather-btn" type="submit">Ок</button>
+                </form>
+               </div>
+               
               </div>
+              <p class="weather-description"></p>
+              
               <svg class="sun-icon" width="230" heigh="230">
                 <use href="./img/sprite.svg#icon-sun"></use>
               </svg>
               <div class="current-temperature-wrapper">
-                <span class="current-temperature">+15</span>
+                <span class="current-temperature"></span>
                 <svg class="degrees-icon" width="20" heigh="20">
                   <use href="./img/sprite.svg#icon-degress"></use>
                 </svg>
@@ -112,12 +129,15 @@
         </div>
       </section>
 
-      <section class="weather-section">
+      <!-- <section class="weather-section">
         <div class="container weather-container">
           <h2>Погода - <span>надихає</span></h2>
           <div class="search-bar">
-            <button class="weather-btn" type="submit">8 днів</button>
+            <form name="weather-form" class="weather-form" autocomplete="of" novalidate>
+              <button class="weather-btn" type="submit">8 днів</button>
               <input type="text" name="city" class="city-name-input" placeholder="Місто - регіон">
+              <select name="city" class="city-query"></select>
+            </form>
           </div>
           <ul class="weather-bar">
             <li class="weather-bar-item">
@@ -274,7 +294,7 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <section class="about">
         <a name="section_about"></a>

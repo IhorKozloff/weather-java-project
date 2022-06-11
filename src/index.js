@@ -1,20 +1,44 @@
-// import AlexandriaGeographicalCoordinates from './coordinates';
-// import axios from "axios"
+import { refs } from './js/constants/refs';
+import { onCityChangerClick } from './js/tools/onCityChangerClick';
+import { onFormSubmit } from './js/tools/onFormSubmit';
+import { getCurrentWeather } from './js/tools/API';
+import { weatherCreator } from './js/tools/weatherCreator';
+
+async function onStart (request) {
+    const resultData = await getCurrentWeather(request);
+
+    weatherCreator(resultData); 
+}
+
+onStart("Киев")
+
+refs.weatherFormEl.addEventListener('submit', onFormSubmit);
+refs.cityChangerBtnEl.addEventListener('click', onCityChangerClick);
 
 
-// const apiKey = "cf43e0136f8c34fc07ed8b788e0c7b14"
-// const BASE_URL = `https://api.openweathermap.org/data/3.0/onecall`
+// async function onFormSubmit (event) {
+    // event.preventDefault();
+    // console.log('form submited');
+//     const selectedOptionValue = refs.inputSelectEl.value;
+//     console.log(selectedOptionValue)
+//     const resultData = await getCurrentWeather(selectedOptionValue);
+//      console.log(resultData)
+//     // weatherDaysCardCreator();
 
-
-
-// const fetchUrl = `${BASE_URL}?lat=${AlexandriaGeographicalCoordinates.latitude}&lon=${AlexandriaGeographicalCoordinates.longtitude}&appid=cf43e0136f8c34fc07ed8b788e0c7b14`
-// console.log(fetchUrl)
-
-
-// async function getWeatherByName () {
-
-//     const response = await axios.get(fetchUrl)
-//     console.log(response.data)
 // }
 
-// getWeatherByName();
+// refs.weatherFormEl.addEventListener('submit', onFormSubmit);
+
+
+
+
+
+
+
+
+
+
+// const queryRequest = 'Vinnytsia'
+// getWeatherByName(queryRequest);
+
+
