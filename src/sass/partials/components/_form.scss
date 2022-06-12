@@ -1,11 +1,12 @@
 .weather-form {
     position: absolute;
     z-index: 100;
-    top: 6;
-    left: -92;
+    top: -5;
+    left: -55;
 }
 
 .weather-btn {
+    height: 100%;
     position: absolute;
     top: 0;
     right: 0;
@@ -17,8 +18,9 @@
     color: $whiteColor;
     border: none;
     cursor: pointer;
+    transform: scale(0.9);
     &:active {
-        transform: scale(0.9);
+        transform: scale(0.8);
     }
 }
 .city-name-input {
@@ -27,7 +29,7 @@
     padding:13px 0 12px 15px;
     align-items: center;
     box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.15);
-    border-radius: 2px;
+    border-radius: 10px;
     border: none;
     outline: none;
     // font-size: 12px;

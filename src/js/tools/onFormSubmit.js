@@ -5,7 +5,6 @@ import { weatherCreator } from './weatherCreator';
 export async function onFormSubmit (event) {
     event.preventDefault();
 
-    refs.tittleWrapperEl.classList.remove('hidden');
     refs.weatherFormEl.classList.add('hidden');
 
     const request = event.currentTarget.elements.city.value

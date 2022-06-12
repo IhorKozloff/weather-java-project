@@ -1,18 +1,26 @@
 
 export function iconGenerator (weather) {
 
+    switch (weather) {
+            case "переменная облачность":
+            return "background-sun-behind-cloud";
+            
+            case "облачно с прояснениями":
+            return "background-sun-behind-cloud";
 
-    if (weather === "переменная облачность") {
-        return "sun-behind-cloud"
-    } else {
-        return "sun"
+            case "ясно":
+            return "background-sun";
+
+            case "пасмурно":
+            return "background-clouds";
+
+            case "небольшой дождь":
+            return "background-rain";
+        
+            default:
+            return "background-no-icon";
     }
-// switch (weather) {
-//         case "переменная облачность":
-//           return "/sprite.e70822e0.svg#icon-sun-behind-cloud";
-      
-//         default:
-//           return "/sprite.e70822e0.svg#icon-sun-behind-cloud";
-//     }
 
 };
+
+
