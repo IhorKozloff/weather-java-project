@@ -1,7 +1,7 @@
 @import '../utils/constants';
 
-.hero {
-    background-image: linear-gradient(rgba(0, 16, 56, 0.45), rgba(0, 16, 56, 0.45)), url('../img/hero-wallpapers/summer/hero-summer-wallpaper-min-2.jpg');
+.hero-section {
+    background-image: linear-gradient(rgba(0, 16, 56, 0.45), rgba(0, 16, 56, 0.45)), url('../img/hero-wallpapers/hero-summer-wallpaper-min-1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -132,4 +132,48 @@ h1 {
     bottom: 150;
     left: 10;
     color: $whiteColor;
+}
+.hero__summer-time {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 203px 0 30px 0;
+
+    background-image: 
+        linear-gradient(rgba(0, 16, 56, 0.45), rgba(0, 16, 56, 0.45)),
+        url('../img/hero-wallpapers/hero-summer-wallpaper-min-2.jpg')
+    ;
+}
+.hero__autumn-time {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 203px 0 30px 0;
+
+    background-image: 
+    linear-gradient(rgba(0, 16, 56, 0.45), rgba(0, 16, 56, 0.45)),
+    url('../img/hero-wallpapers/hero-autumn-wallpaper-min.jpg')
+;
+}
+.hero__winter-time {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 203px 0 30px 0;
+
+    background-image: 
+    linear-gradient(rgba(0, 16, 56, 0.45), rgba(0, 16, 56, 0.45)),
+    url('../img/hero-wallpapers/hero-winter-wallpaper-min.jpg')
+;
+}
+.hero__spring-time {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 203px 0 30px 0;
+
+    background-image: 
+    linear-gradient(rgba(0, 16, 56, 0.45), rgba(0, 16, 56, 0.45)),
+    url('../img/hero-wallpapers/hero-spring-wallpaper-min.jpg')
+;
 }

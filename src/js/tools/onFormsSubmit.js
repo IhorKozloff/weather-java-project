@@ -1,8 +1,9 @@
 import { refs } from '../constants/refs';
 import { getCurrentWeather } from './API';
 import { weatherCreator } from './weatherCreator';
+import { seasonThemeSwitcher } from './seasonsThemeSwitcher';
 
-export async function onFormSubmit (event) {
+export async function onSearchFormSubmit (event) {
     event.preventDefault();
 
     refs.weatherFormEl.classList.add('hidden');
@@ -12,4 +13,10 @@ export async function onFormSubmit (event) {
     const resultData = await getCurrentWeather(request);
 
     weatherCreator(resultData); 
+};
+
+export function onSeasonThemeFormSubmit (event) {
+    event.preventDefault();
+    const seasonTheme = event.currentTarget.elements.themeSwitcher.value;
+    seasonThemeSwitcher(seasonTheme); 
 };

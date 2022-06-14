@@ -4,11 +4,11 @@ body {
   font-weight: 400;
   line-height: 1.5;
   color: #2f2f37;
+  margin: 0;
 }
 
 section {
   max-width: 1600px;
-  margin: 0 0 110px 0;
 }
 
 header, footer {
@@ -117,6 +117,91 @@ nav {
   margin-right: 128px;
 }
 
+.burger-menu-wrapper {
+  position: relative;
+}
+
+.burger-menu-btn {
+  position: relative;
+  background: none;
+  width: 31px;
+  height: 36px;
+  border: none;
+  cursor: pointer;
+  margin-left: 84px;
+}
+.burger-menu-btn:active {
+  transform: scale(0.9);
+}
+
+.burger-menu-icon {
+  position: absolute;
+  top: 5;
+  left: -2;
+}
+
+.modal-menu-wrapper {
+  border: 1px solid black;
+  padding: 40px 10px 100px 10px;
+  position: absolute;
+  top: 0;
+  left: 80;
+  width: 150px;
+  opacity: 0;
+  transform: translateY(-50%);
+  transition: opacity 200ms ease, transform 1s ease;
+  background-color: #fff;
+  pointer-events: none;
+  z-index: 100;
+}
+.modal-menu-wrapper.active {
+  transition: opacity 100ms ease, transform 1s ease;
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal-menu-close-btn {
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/close-btn-icon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: none;
+  position: absolute;
+  top: 5;
+  right: 5;
+  cursor: pointer;
+}
+.modal-menu-close-btn:active {
+  transform: scale(0.9);
+}
+
+.header__summer-time {
+  background-repeat: no-repeat;
+  background-position: top left, bottom -95 left 800, top right;
+  background-size: 75px, 150px, 60px;
+  background-image: url("../img/header-wallpapers/header_summer/header-summer-decor-wallpapers-left.svg"), url("../img/header-wallpapers/header_summer/header-summer-decor-wallpapers-center.svg"), url("../img/header-wallpapers/header_summer/header-summer-decor-wallpapers-right.svg");
+  margin: 0 auto;
+}
+
+.header__autumn-time {
+  background-repeat: no-repeat;
+  background-position: top left, bottom -95 left 800, top right;
+  background-size: 75px, 150px, 60px;
+  background-image: url("../img/header-wallpapers/header_autumn/header-autumndecor-wallpapers-left.svg"), url("../img/header-wallpapers/header_autumn/header-autumn-decor-wallpapers-center.svg"), url("../img/header-wallpapers/header_autumn/header-autumndecor-wallpapers-right.svg");
+  margin: 0 auto;
+}
+
+.header__winter-time {
+  margin: 0 auto;
+}
+
+.header__spring-time {
+  margin: 0 auto;
+}
+
 .social-contacts-content {
   display: flex;
   justify-content: center;
@@ -172,8 +257,8 @@ nav {
   color: #006D85;
 }
 
-.hero {
-  background-image: linear-gradient(rgba(0, 16, 56, 0.45), rgba(0, 16, 56, 0.45)), url("../img/hero-wallpapers/summer/hero-summer-wallpaper-min-2.jpg");
+.hero-section {
+  background-image: linear-gradient(rgba(0, 16, 56, 0.45), rgba(0, 16, 56, 0.45)), url("../img/hero-wallpapers/hero-summer-wallpaper-min-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -321,6 +406,42 @@ h1 {
   color: #FFF;
 }
 
+.hero__summer-time {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 203px 0 30px 0;
+  background-image: linear-gradient(rgba(0, 16, 56, 0.45), rgba(0, 16, 56, 0.45)), url("../img/hero-wallpapers/hero-summer-wallpaper-min-2.jpg");
+}
+
+.hero__autumn-time {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 203px 0 30px 0;
+  background-image: linear-gradient(rgba(0, 16, 56, 0.45), rgba(0, 16, 56, 0.45)), url("../img/hero-wallpapers/hero-autumn-wallpaper-min.jpg");
+}
+
+.hero__winter-time {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 203px 0 30px 0;
+  background-image: linear-gradient(rgba(0, 16, 56, 0.45), rgba(0, 16, 56, 0.45)), url("../img/hero-wallpapers/hero-winter-wallpaper-min.jpg");
+}
+
+.hero__spring-time {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 203px 0 30px 0;
+  background-image: linear-gradient(rgba(0, 16, 56, 0.45), rgba(0, 16, 56, 0.45)), url("../img/hero-wallpapers/hero-spring-wallpaper-min.jpg");
+}
+
+.about-section {
+  padding: 115px 0 110px 0;
+}
+
 .about-container {
   flex-direction: column;
 }
@@ -332,7 +453,6 @@ h2 span {
 .about-content-wrapper {
   display: flex;
   justify-content: space-between;
-  margin-top: 60px;
 }
 
 .ppl-image-wrapper {
@@ -361,126 +481,80 @@ h2 span {
   margin-bottom: 10px;
 }
 
-.weather-container {
-  flex-direction: column;
+.about__summer-time {
+  background-image: url("../img/about-wallpapers/about_summer/about-summer-decor-wallpapers-left.svg"), url("../img/about-wallpapers/about_summer/about-summer-decor-wallpapers-center.svg"), url("../img/about-wallpapers/about_summer/about-summer-decor-wallpapers-right.svg");
+  background-repeat: no-repeat;
+  background-position: top 320 left -13, top -82 left 870, bottom 80 right;
+  background-size: 132px 148px, 120px 152px, 121px 181px;
+  padding: 115px 0 110px 0;
 }
 
-h2 {
-  margin-bottom: 60px;
-}
-h2 span {
-  color: #006D85;
-}
-
-.city-query {
-  width: 269px;
-  margin-left: 93px;
-  padding: 13px 0 12px 15px;
-  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.15);
-  border-radius: 2px;
-  border: none;
+.about__autumn-time {
+  background-image: url("../img/about-wallpapers/about_autumn/about-summer-decor-wallpapers-left.svg"), url("../img/about-wallpapers/about_autumn/about-summer-decor-wallpapers-center.svg"), url("../img/about-wallpapers/about_autumn/about-summer-decor-wallpapers-right.svg");
+  background-repeat: no-repeat;
+  background-position: top 320 left -13, top -82 left 870, bottom 80 right;
+  background-size: 132px 148px, 120px 152px, 121px 181px;
+  padding: 115px 0 110px 0;
 }
 
-.weather-bar {
-  padding-bottom: 28px;
-  display: flex;
-  margin-top: 60px;
+.about__winter-time {
+  background-repeat: no-repeat;
+  background-position: top 320 left -13, top -82 left 870, bottom 80 right;
+  background-size: 132px 148px, 120px 152px, 121px 181px;
+  padding: 115px 0 110px 0;
 }
 
-.weather-bar-item {
-  width: 270px;
-  border-radius: 20px;
-  padding: 24px 55px 30px 55px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 20px;
-}
-.weather-bar-item:not(:last-child) {
-  margin-right: 30px;
+.about__spring-time {
+  background-repeat: no-repeat;
+  background-position: top 320 left -13, top -82 left 870, bottom 80 right;
+  background-size: 132px 148px, 120px 152px, 121px 181px;
+  padding: 115px 0 110px 0;
 }
 
-.date {
-  font-size: 35px;
-  line-height: 1.14;
-}
-
-.day {
-  font-size: 15px;
-  line-height: 17px;
-  color: #006D85;
-}
-
-.weather-icnon {
-  margin-top: 23px;
-  fill: #FFCA22;
-}
-
-.temperature-to-time-list {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
-  margin-top: 23px;
-}
-
-.temperature-to-time-list-item {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: #000;
-}
-.temperature-to-time-list-item span {
-  display: block;
-}
-.temperature-to-time-list-item:not(:last-child) {
-  margin-bottom: 14px;
-}
-
-.time {
-  font-size: 15px;
-  line-height: 17px;
-  opacity: 0.6;
-}
-
-.temperature-to-time {
-  font-size: 25px;
-  line-height: 29px;
-  color: #000749;
-}
-
-.temperature-wrapper {
-  position: relative;
-}
-
-.weather-degrees-icon {
-  fill: red;
-  position: absolute;
-  top: 3;
-  right: -10;
-}
-
-footer {
+.footer-section {
   padding-top: 95px;
+  padding-bottom: 30px;
+  margin-top: 0;
   background-image: linear-gradient(rgba(0, 16, 56, 0.45), rgba(0, 16, 56, 0.45)), url("../img/footer-wall-min.jpg");
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
-  margin-top: 0;
 }
 
 .footer-container {
   flex-direction: column;
+  position: relative;
 }
 
 .footer-text-wrapper {
   width: 834px;
 }
 
+.footer-secondary-inform-btn {
+  position: absolute;
+  right: 110;
+  top: 100;
+  width: 180px;
+  height: 54px;
+  background: none;
+  cursor: pointer;
+  border: none;
+  transition: transform 2s ease;
+}
+.footer-secondary-inform-btn.rotated {
+  transform: rotateX(180deg);
+  transition: transform 2s ease;
+}
+
+.secondary-inform-bt-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  fill: #FFF;
+}
+
 .footer-tittle {
+  margin-bottom: 40px;
   color: #FFF;
 }
 .footer-tittle span {
@@ -495,9 +569,45 @@ footer {
   text-indent: 50px;
 }
 
+.secondary-text-wrapper {
+  height: 0;
+  overflow: hidden;
+  position: relative;
+}
+.secondary-text-wrapper p {
+  position: absolute;
+  transition: transform 1s ease;
+  transform: translateY(-100%);
+}
+.secondary-text-wrapper.active {
+  height: 200px;
+  margin-top: 27px;
+}
+.secondary-text-wrapper.active p {
+  transform: translateY(0);
+  transition: transform 1s ease;
+}
+
 .footer-navigation-wrapper {
   display: flex;
   margin-top: 109px;
+}
+
+.footer__summer-time {
+  background-image: url("../img/footer-wallpapers/summer_footer/footer-summer-decor-wallpapers-left.svg"), url("../img/footer-wallpapers/summer_footer/footer-summer-decor-wallpapers-right.svg"), linear-gradient(rgba(0, 16, 56, 0.45), rgba(0, 16, 56, 0.45)), url("../img/footer-wall-min.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom -12 left -3, bottom right -12, center, center;
+  background-size: 128px 137px, 155px 165px, cover, cover;
+}
+
+.footer__autumn-time {
+  background-image: url("../img/footer-wallpapers/footer_autumn/footer-summer-decor-wallpapers-left.svg"), url("../img/footer-wallpapers/footer_autumn/footer-summer-decor-wallpapers-right.svg"), linear-gradient(rgba(0, 16, 56, 0.45), rgba(0, 16, 56, 0.45)), url("../img/footer-wall-min.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom -12 left -3, bottom right -12, center, center;
+  background-size: 128px 137px, 155px 165px, cover, cover;
+  padding-top: 95px;
+  padding-bottom: 30px;
+  margin-top: 0;
 }
 
 .weather-form {
@@ -555,4 +665,43 @@ footer {
 
 .background-rain {
   background-image: url("/src/img/description-icons/svg-rain.svg");
+}
+
+.background-simple-cloud {
+  background-image: url("/src/img/description-icons/svg_sun-behind-cloud.svg");
+}
+
+.current-weather-outlet {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+}
+
+.season-theme {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.theme-form {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.season-theme-select {
+  width: 85%;
+  cursor: pointer;
+}
+
+.season-theme-confirm-btn {
+  border: 1px solid black;
+  background: none;
+  height: 18px;
+  margin-bottom: 2px;
+  width: 20%;
+  cursor: pointer;
+}
+.season-theme-confirm-btn:active {
+  transform: scale(0.9);
 }/*# sourceMappingURL=index.css.map */

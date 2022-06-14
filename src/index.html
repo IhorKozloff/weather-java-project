@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="/src/sass/index.css" />
   </head>
   <body>
-    <header>
-      <section class="header-section">
+    <header id="headerSection" class="header-section">
+
         <div class="container header-container">
           <div class="logo-wrapper">
             <p class="logo"><span>W</span>-Clear</p>
@@ -41,12 +41,45 @@
               </svg>
             </button>
           </div>
-        </div>
-        
+
+
+          <div class="burger-menu-wrapper">
+            <div class="modal-menu-wrapper">
+              <div class="season-theme">
+                <div class="select-wrapper">
+                  <form name="seasons-theme-form" class="theme-form" autocomplete="off" novalidate>
+                    <button type="button" class="modal-menu-close-btn"></button>
+                    <div class="season-theme-switcher-wrapper">
+                      <label for="season-theme-switcher">Змінити тему</label>
+                      <select id="season-theme-switcher" name="themeSwitcher" class="season-theme-select">
+                        <option value="noTheme">Без теми</option>
+                        <option value="summer">Літо</option>
+                        <option value="autumn">Осінь</option>
+                        <option value="winter" >Зима</option>
+                        <option value="spring">Весна</option>
+                      </select>
+                    </div>
+                      
+                    <button type="submit" class="season-theme-confirm-btn" >Ок</button>
+                  </form>
+                </div>
+                
+              </div>
+            </div>  
+
+            <button class="burger-menu-btn" type="button">
+              <svg class="burger-menu-icon" width="31" height="23">
+                <use href="./img/sprite.svg#icon-burger-menu-btn"></use>
+              </svg>
+            </button>
+          </div>
       </section>
     </header>
+
     <main>
-      <section class="hero">
+
+
+      <section id="heroSection" class="hero-section">
         <div class="container hero-container">
           <div class="main-hero-content">
             <div class="hero-tittle-panel-wrapper">
@@ -287,8 +320,16 @@
           </ul>
         </div>
       </section> -->
+      <section class="current-weather-section">
+        <div class="container">
+          <div class="current-weather-outlet">
+            
+          </div>
+        </div>
+      </section>
 
-      <section class="about">
+      
+      <section id="aboutSection" class="about-section">
         <a name="section_about"></a>
         <div class="container about-container">
           <h2 class="about-tittle">Дружня <span>спільнота</span></h2>
@@ -313,16 +354,29 @@
           </div>
         </div>
       </section>
+
     </main>
-    <footer>
+
+    <footer id="footerSection" class="footer-section">
     
       <div class="container footer-container">
+        <button type="button" class="footer-secondary-inform-btn">
+          <svg width="180" height="54" class="secondary-inform-bt-icon">
+            <use href="./img/sprite.svg#icon-btn-arrow-down"></use>
+          </svg>
+        </button>
         <div class="footer-text-wrapper">
           <h2 class="footer-tittle">Новітнє <span>обладнання</span></h2>
           <p class="footer-text">
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a ga of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with  the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including
             versions of Lorem Ipsum.         
           </p>
+          <div class="secondary-text-wrapper">
+            <p id="secondary-text" class="footer-text">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a ga of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with  the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including
+              versions of Lorem Ipsum.         
+            </p>
+          </div>
         </div>
         <div class="footer-navigation-wrapper">
           <div class="logo-wrapper">

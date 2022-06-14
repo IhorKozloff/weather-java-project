@@ -1,19 +1,49 @@
 @import '../utils/constants';
 
-footer {
+.footer-section {
     padding-top: 95px;
-    background-image: linear-gradient(rgba(0, 16, 56, 0.45), rgba(0, 16, 56, 0.45)), url('../img/footer-wall-min.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    padding-bottom: 30px;
     margin-top: 0;
+    background-image: 
+        linear-gradient(rgba(0, 16, 56, 0.45), rgba(0, 16, 56, 0.45)),
+        url('../img/footer-wall-min.jpg')
+;
+    
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 .footer-container {
     flex-direction: column;
+    position: relative;
 }
 .footer-text-wrapper {
     width: 834px;
 }
+.footer-secondary-inform-btn {
+    position: absolute;
+    right: 110;
+    top: 100;
+    width: 180px;
+    height: 54px;
+    background: none;
+    cursor: pointer;
+    border: none;
+    transition: transform 2s ease;
+    &.rotated {
+        transform: rotateX(180deg);
+        transition: transform 2s ease;
+    }
+}
+.secondary-inform-bt-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    fill: $whiteColor;
+}
 .footer-tittle {
+    margin-bottom: 40px;
     color: $whiteColor;
     & span {
         color: $primaryColor;
@@ -25,8 +55,56 @@ footer {
     letter-spacing: 0.02em;
     color: $whiteColor;
     text-indent: 50px;
+
 }
+
+.secondary-text-wrapper {
+    height: 0;
+    overflow: hidden;
+    position: relative;
+    & p {
+        position: absolute;
+        transition: transform 1s ease;
+        transform: translateY(-100%);
+        
+    }
+    &.active {
+        height: 200px;
+        margin-top: 27px;
+        & p {
+            transform: translateY(0);
+            transition: transform 1s ease;
+        }
+    }
+}
+
 .footer-navigation-wrapper {
     display: flex;
     margin-top: 109px;
+}
+.footer__summer-time {
+    background-image: 
+        url('../img/footer-wallpapers/summer_footer/footer-summer-decor-wallpapers-left.svg'),
+        url('../img/footer-wallpapers/summer_footer/footer-summer-decor-wallpapers-right.svg'),
+        linear-gradient(rgba(0, 16, 56, 0.45), rgba(0, 16, 56, 0.45)),
+        url('../img/footer-wall-min.jpg')
+    ;
+    background-repeat: no-repeat;
+    background-position: bottom -12 left -3, bottom  right -12, center, center;
+    background-size: 128px 137px, 155px 165px, cover, cover;
+}
+.footer__autumn-time {
+    background-image: 
+        url('../img/footer-wallpapers/footer_autumn/footer-summer-decor-wallpapers-left.svg'),
+        url('../img/footer-wallpapers/footer_autumn/footer-summer-decor-wallpapers-right.svg'),
+        linear-gradient(rgba(0, 16, 56, 0.45), rgba(0, 16, 56, 0.45)),
+        url('../img/footer-wall-min.jpg')
+    ;
+    background-repeat: no-repeat;
+    background-position: bottom -12 left -3, bottom  right -12, center, center;
+    background-size: 128px 137px, 155px 165px, cover, cover;
+
+    padding-top: 95px;
+    padding-bottom: 30px;
+    margin-top: 0;
 }

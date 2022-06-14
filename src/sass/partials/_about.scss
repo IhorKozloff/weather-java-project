@@ -1,8 +1,10 @@
 @import '../utils/constants';
 
+.about-section {
+    padding: 115px 0 110px 0;
+}
 .about-container {
-    flex-direction: column;
-    
+    flex-direction: column; 
 }
 h2 {
  & span {
@@ -12,7 +14,6 @@ h2 {
 .about-content-wrapper {
     display: flex;
     justify-content: space-between;
-    margin-top: 60px;
 }
 .ppl-image-wrapper {
     border-radius: 20px;
@@ -35,4 +36,46 @@ h2 {
     &:not(:last-child) {
         margin-bottom: 10px;
     }
+}
+.about__summer-time {
+    background-image: 
+        url('../img/about-wallpapers/about_summer/about-summer-decor-wallpapers-left.svg'),
+        url('../img/about-wallpapers/about_summer/about-summer-decor-wallpapers-center.svg'),
+        url('../img/about-wallpapers/about_summer/about-summer-decor-wallpapers-right.svg')
+    ;
+
+    background-repeat: no-repeat;
+    background-position: top 320 left -13, top -82 left 870, bottom 80 right;
+    background-size: 132px 148px, 120px 152px, 121px 181px;
+
+    padding: 115px 0 110px 0;
+}
+.about__autumn-time {
+    background-image: 
+        url('../img/about-wallpapers/about_autumn/about-summer-decor-wallpapers-left.svg'),
+        url('../img/about-wallpapers/about_autumn/about-summer-decor-wallpapers-center.svg'),
+        url('../img/about-wallpapers/about_autumn/about-summer-decor-wallpapers-right.svg')
+    ;
+
+    background-repeat: no-repeat;
+    background-position: top 320 left -13, top -82 left 870, bottom 80 right;
+    background-size: 132px 148px, 120px 152px, 121px 181px;
+
+    padding: 115px 0 110px 0;
+}
+.about__winter-time {
+
+    background-repeat: no-repeat;
+    background-position: top 320 left -13, top -82 left 870, bottom 80 right;
+    background-size: 132px 148px, 120px 152px, 121px 181px;
+
+    padding: 115px 0 110px 0;
+}
+.about__spring-time {
+
+    background-repeat: no-repeat;
+    background-position: top 320 left -13, top -82 left 870, bottom 80 right;
+    background-size: 132px 148px, 120px 152px, 121px 181px;
+
+    padding: 115px 0 110px 0;
 }

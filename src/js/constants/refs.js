@@ -2,6 +2,22 @@ export const refs = {
     weatherFormEl: document.querySelector('.weather-form'),
     cityChangerBtnEl: document.querySelector('.city-changer-btn'),
 
-    currentWeatherOutletEl: document.querySelector('.weather-data-outlet'),
-    weatherLargeIconOutletEl: document.querySelector('.weather-large-icon-wrapper')
+    heroWeatherOutletEl: document.querySelector('.weather-data-outlet'),
+    weatherLargeIconOutletEl: document.querySelector('.weather-large-icon-wrapper'),
+    currentWeatherOutletEl: document.querySelector('.current-weather-outlet'),
+
+
+    burgerMenuEl: document.querySelector('.modal-menu-wrapper'),
+    burgerMenuOpenBtnEl: document.querySelector('.burger-menu-btn'),
+    burgerMenuCloseBtnEl: document.querySelector('.modal-menu-close-btn'),
+
+    seasonThemeFormEl: document.querySelector('.theme-form'),
+
+    headerSectionEl: document.querySelector('#headerSection'),
+    heroSectionEl: document.querySelector('#heroSection'),
+    aboutSectionEl: document.querySelector('#aboutSection'), 
+    footerSectionEl: document.querySelector('#footerSection'),
+
+    footerInformBtn: document.querySelector('.footer-secondary-inform-btn'),
+    secondaryInformText: document.querySelector('.secondary-text-wrapper')
 }

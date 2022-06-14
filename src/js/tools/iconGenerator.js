@@ -17,6 +17,9 @@ export function iconGenerator (weather) {
             case "небольшой дождь":
             return "background-rain";
         
+            case "небольшая облачность":
+            return"background-simple-cloud";
+
             default:
             return "background-no-icon";
     }

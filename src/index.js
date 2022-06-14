@@ -1,19 +1,56 @@
 import { refs } from './js/constants/refs';
 import { onCityChangerClick } from './js/tools/onCityChangerClick';
-import { onFormSubmit } from './js/tools/onFormSubmit';
+import { onSearchFormSubmit, onSeasonThemeFormSubmit } from './js/tools/onFormsSubmit';
 import { getCurrentWeather } from './js/tools/API';
 import { weatherCreator } from './js/tools/weatherCreator';
+import { onBurgerOpenBtn, onBurgerCloseBtn } from './js/tools/burgerMenuFunc';
 
 async function onStart (request) {
     const resultData = await getCurrentWeather(request);
-
     weatherCreator(resultData); 
 }
 
+function onInformBtnClick () {
+    refs.footerInformBtn.classList.toggle('rotated');
+    refs.secondaryInformText.classList.toggle('active');
+};
+
+refs.burgerMenuOpenBtnEl.addEventListener('click', onBurgerOpenBtn);
+refs.burgerMenuCloseBtnEl.addEventListener('click', onBurgerCloseBtn);
+refs.seasonThemeFormEl.addEventListener('submit', onSeasonThemeFormSubmit);
+refs.weatherFormEl.addEventListener('submit', onSearchFormSubmit);
+refs.cityChangerBtnEl.addEventListener('click', onCityChangerClick);
+refs.footerInformBtn.addEventListener('click', onInformBtnClick)
+
+
+
+
+
 onStart("Киев")
 
-refs.weatherFormEl.addEventListener('submit', onFormSubmit);
-refs.cityChangerBtnEl.addEventListener('click', onCityChangerClick);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // async function onFormSubmit (event) {

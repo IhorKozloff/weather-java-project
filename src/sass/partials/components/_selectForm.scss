@@ -1,0 +1,25 @@
+.season-theme {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+ }
+ .theme-form {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+ }
+ .season-theme-select {
+    width: 85%;
+    cursor: pointer;
+ }
+ .season-theme-confirm-btn {
+    border: 1px solid black;
+    background: none;
+    height: 18px;
+    margin-bottom: 2px;
+    width: 20%;
+    &:active {
+        transform: scale(0.9);
+    }
+    cursor: pointer;
+ }

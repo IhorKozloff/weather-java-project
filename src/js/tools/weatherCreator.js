@@ -5,7 +5,7 @@ export function weatherCreator (data) {
     console.log(data)
     const description = data.weather[0].description
 
-    refs.currentWeatherOutletEl.innerHTML = `
+    refs.heroWeatherOutletEl.innerHTML = `
 
         <div class="title-wrapper">
             <div class="tittle-text-wrapper" style="display: flex;">
@@ -25,6 +25,16 @@ export function weatherCreator (data) {
             <span class="current-temperature">${Math.round(data.main.temp)}</span>
         </div>
        
+    `;
+    refs.currentWeatherOutletEl.innerHTML = `
+        <span class="date">Дата:${data.dt}</span>
+        <span class="wind">Ветер: ${data.wind.speed} м/с</span>
+        <span class="humidity">Влажность: ${data.main.humidity} %</span>
+        <span class="visibility">Видимость: ${data.visibility / 1000} км</span>
+        <span class="clouds">Облачность: ${data.clouds.all} %</span>
+        <span class="pressure">Давление: ${data.main.pressure} hPa</span>
+        <span class="max-temp">Максимальная температура: ${data.main.temp_min} deg</span>
+        <span class="min-temp">Минимальная температура: ${data.main.temp_min} deg</span>
     `;
     refs.cityChangerBtnEl.classList.remove('hidden')
 
