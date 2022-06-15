@@ -6,6 +6,9 @@
 .about-container {
     flex-direction: column; 
 }
+.about-tittle-outlet {
+    margin-bottom: 60px;
+}
 h2 {
  & span {
     color: $primaryColorDark;;

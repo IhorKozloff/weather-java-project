@@ -13,9 +13,6 @@
     line-height: 1.16;
     text-decoration: none;
     color: black;
-    &.item-link__color-white {
-        color: $whiteColor;
-    }
     &:hover {
         color: #006D85;
     }

@@ -15,6 +15,12 @@ header, footer {
   max-width: 1600px;
 }
 
+footer {
+  padding-top: 95px;
+  padding-bottom: 30px;
+  margin-top: 0;
+}
+
 h1 {
   font-size: 55px;
   line-height: 1.36;
@@ -250,11 +256,24 @@ nav {
   text-decoration: none;
   color: black;
 }
-.item-link.item-link__color-white {
-  color: #FFF;
-}
 .item-link:hover {
   color: #006D85;
+}
+
+.language-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.language-interface {
+  width: 50%;
+  font-size: 17px;
+  line-height: 1.17;
+  border: none;
+  background: none;
+  cursor: pointer;
+  outline: none;
 }
 
 .hero-section {
@@ -446,6 +465,10 @@ h1 {
   flex-direction: column;
 }
 
+.about-tittle-outlet {
+  margin-bottom: 60px;
+}
+
 h2 span {
   color: #006D85;
 }
@@ -512,13 +535,14 @@ h2 span {
 }
 
 .footer-section {
-  padding-top: 95px;
-  padding-bottom: 30px;
-  margin-top: 0;
   background-image: linear-gradient(rgba(0, 16, 56, 0.45), rgba(0, 16, 56, 0.45)), url("../img/footer-wall-min.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+.footer-section.footer-section__extended-text {
+  background-image: linear-gradient(rgba(0, 16, 56, 0.45), rgba(0, 16, 56, 0.45)), url("../img/footer-wall-with-extra-text-min.jpg");
+  background-position: center, center right -25;
 }
 
 .footer-container {
@@ -542,8 +566,8 @@ h2 span {
   transition: transform 2s ease;
 }
 .footer-secondary-inform-btn.rotated {
-  transform: rotateX(180deg);
-  transition: transform 2s ease;
+  transform: rotateX(180deg) translateY(-130px);
+  transition: transform 1s ease;
 }
 
 .secondary-inform-bt-icon {
@@ -592,6 +616,9 @@ h2 span {
   display: flex;
   margin-top: 109px;
 }
+.footer-navigation-wrapper nav a {
+  color: #FFF;
+}
 
 .footer__summer-time {
   background-image: url("../img/footer-wallpapers/summer_footer/footer-summer-decor-wallpapers-left.svg"), url("../img/footer-wallpapers/summer_footer/footer-summer-decor-wallpapers-right.svg"), linear-gradient(rgba(0, 16, 56, 0.45), rgba(0, 16, 56, 0.45)), url("../img/footer-wall-min.jpg");
@@ -599,15 +626,20 @@ h2 span {
   background-position: bottom -12 left -3, bottom right -12, center, center;
   background-size: 128px 137px, 155px 165px, cover, cover;
 }
+.footer__summer-time.footer-section__extended-text {
+  background-image: url("../img/footer-wallpapers/summer_footer/footer-summer-decor-wallpapers-left.svg"), url("../img/footer-wallpapers/summer_footer/footer-summer-decor-wallpapers-right.svg"), linear-gradient(rgba(0, 16, 56, 0.45), rgba(0, 16, 56, 0.45)), url("../img/footer-wall-with-extra-text-min.jpg");
+  background-position: bottom -12 left -3, bottom right -12, center, center right -25;
+}
 
 .footer__autumn-time {
   background-image: url("../img/footer-wallpapers/footer_autumn/footer-summer-decor-wallpapers-left.svg"), url("../img/footer-wallpapers/footer_autumn/footer-summer-decor-wallpapers-right.svg"), linear-gradient(rgba(0, 16, 56, 0.45), rgba(0, 16, 56, 0.45)), url("../img/footer-wall-min.jpg");
   background-repeat: no-repeat;
   background-position: bottom -12 left -3, bottom right -12, center, center;
   background-size: 128px 137px, 155px 165px, cover, cover;
-  padding-top: 95px;
-  padding-bottom: 30px;
-  margin-top: 0;
+}
+.footer__autumn-time.footer-section__extended-text {
+  background-image: url("../img/footer-wallpapers/footer_autumn/footer-summer-decor-wallpapers-left.svg"), url("../img/footer-wallpapers/footer_autumn/footer-summer-decor-wallpapers-right.svg"), linear-gradient(rgba(0, 16, 56, 0.45), rgba(0, 16, 56, 0.45)), url("../img/footer-wall-with-extra-text-min.jpg");
+  background-position: bottom -12 left -3, bottom right -12, center, center right -25;
 }
 
 .weather-form {

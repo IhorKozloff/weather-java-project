@@ -1,0 +1,13 @@
+.language-menu {
+    @include dfcc;
+}
+
+.language-interface {
+    width: 50%;
+    font-size: 17px;
+    line-height: 1.17;
+    border: none;
+    background: none;
+    cursor: pointer;
+    outline: none;
+}

@@ -1,5 +1,5 @@
 import { refs } from '../constants/refs';
-import { getCurrentWeather } from './API';
+import { getCurrentWeather} from './API';
 import { weatherCreator } from './weatherCreator';
 import { seasonThemeSwitcher } from './seasonsThemeSwitcher';
 
@@ -10,7 +10,9 @@ export async function onSearchFormSubmit (event) {
 
     const request = event.currentTarget.elements.city.value
 
-    const resultData = await getCurrentWeather(request);
+    const currentLanguage =  refs.lenguageSwitcher.value 
+
+    const resultData = await getCurrentWeather(request, currentLanguage);
 
     weatherCreator(resultData); 
 };

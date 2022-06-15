@@ -19,5 +19,14 @@ export const refs = {
     footerSectionEl: document.querySelector('#footerSection'),
 
     footerInformBtn: document.querySelector('.footer-secondary-inform-btn'),
-    secondaryInformText: document.querySelector('.secondary-text-wrapper')
+    secondaryInformText: document.querySelector('.secondary-text-wrapper'),
+
+
+    lenguageSwitcher: document.querySelector('.language-interface'),
+
+    navigationEl: document.querySelectorAll('nav'),
+    menuSeasonsSwitcher: document.querySelector('.season-theme-switcher-wrapper'),
+    heroTittlePanel: document.querySelector('.hero-tittle-panel-wrapper'),
+    aboutTittleOutletEl: document.querySelector('.about-tittle-outlet'),
+    footerTittleOutletEl: document.querySelector('.footer-tittle-aoutlet'),
 }
