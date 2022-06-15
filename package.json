@@ -5,7 +5,7 @@
   "homepage": "https://IhorKozloff.github.io/weather-java-project",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /parcel-project-template/"
+    "build": "parcel build src/*.html --public-url /weather-java-project/"
   },
   "repository": {
     "type": "git",
