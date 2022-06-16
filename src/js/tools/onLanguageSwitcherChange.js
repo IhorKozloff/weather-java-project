@@ -1,4 +1,5 @@
 import { refs } from '../constants/refs';
+import { getWeather } from '../tools/getWeather';
 
 const NavBarUa = `
 <ul class="link-list">
@@ -67,7 +68,7 @@ function LanguageSwitcher (language) {
             refs.heroTittlePanel.innerHTML = `
                 <h1 class="hero-tittle">Погода - <span>плани</span> на майбутнє</h1>
                 <p class="hero-about">
-                Правдива погода допоможе швидко та без зусиль скласти плани на майбутнє, зустрічі з друзями чи відпочинок на природі.
+                    Правдива погода допоможе швидко та без зусиль скласти плани на майбутнє, зустрічі з друзями чи відпочинок на природі.
                 </p>
                 <button type="button" class="hero-btn">Дивитися</button>
             `;
@@ -77,6 +78,7 @@ function LanguageSwitcher (language) {
             refs.footerTittleOutletEl.innerHTML = `
                 <h2 class="footer-tittle">Новітнє <span>обладнання</span></h2>
             `;
+            refs.cityChangerBtnEl.textContent = "Змінити місто?"
             break
         case 'eng':
             for (item of refs.navigationEl)
@@ -99,6 +101,7 @@ function LanguageSwitcher (language) {
             refs.footerTittleOutletEl.innerHTML = `
                 <h2 class="footer-tittle">Latest <span>equipment</span></h2>
             `;
+            refs.cityChangerBtnEl.textContent = "Change city?"
             break
         case 'russian':
             break
@@ -115,5 +118,6 @@ function LanguageSwitcher (language) {
 
 
 export function onLanguageSwitcherChange (event) {
-    LanguageSwitcher(event.target.value)
+    LanguageSwitcher(event.target.value);
+    getWeather()
 }

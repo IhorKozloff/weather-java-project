@@ -1,20 +1,16 @@
 import { refs } from '../constants/refs';
-import { getCurrentWeather} from './API';
-import { weatherCreator } from './weatherCreator';
+import { getWeather } from '../tools/getWeather';
 import { seasonThemeSwitcher } from './seasonsThemeSwitcher';
+import { closeOverlay } from './onCityChangerClick';
 
 export async function onSearchFormSubmit (event) {
     event.preventDefault();
 
-    refs.weatherFormEl.classList.add('hidden');
-
     const request = event.currentTarget.elements.city.value
+    closeOverlay();
+    getWeather(request);
 
-    const currentLanguage =  refs.lenguageSwitcher.value 
 
-    const resultData = await getCurrentWeather(request, currentLanguage);
-
-    weatherCreator(resultData); 
 };
 
 export function onSeasonThemeFormSubmit (event) {
@@ -22,3 +18,4 @@ export function onSeasonThemeFormSubmit (event) {
     const seasonTheme = event.currentTarget.elements.themeSwitcher.value;
     seasonThemeSwitcher(seasonTheme); 
 };
+

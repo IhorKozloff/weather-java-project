@@ -170,6 +170,7 @@ nav {
 .modal-menu-close-btn {
   width: 20px;
   height: 20px;
+  border-radius: 10px;
   background-image: url("../img/close-btn-icon.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -420,8 +421,8 @@ h1 {
 
 .weather-description {
   position: absolute;
-  bottom: 150;
-  left: 10;
+  bottom: 13;
+  left: 120;
   color: #FFF;
 }
 
@@ -642,11 +643,25 @@ h2 span {
   background-position: bottom -12 left -3, bottom right -12, center, center right -25;
 }
 
+.city-changer-overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-image: linear-gradient(rgba(0, 16, 56, 0.45), rgba(0, 16, 56, 0.45));
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 1000;
+  transition: opacity 500ms ease;
+}
+
 .weather-form {
   position: absolute;
-  z-index: 100;
-  top: -5;
-  left: -55;
+  z-index: 1001;
+  top: 275;
+  left: 950;
 }
 
 .weather-btn {
@@ -677,6 +692,25 @@ h2 span {
   border-radius: 10px;
   border: none;
   outline: none;
+}
+
+.city-changer-close-btn {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background-image: url("../img/close-btn-icon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: none;
+  position: absolute;
+  top: 255;
+  right: 165;
+  z-index: 1001;
+  cursor: pointer;
+}
+.city-changer-close-btn:active {
+  transform: scale(0.9);
 }
 
 .background-no-icon {

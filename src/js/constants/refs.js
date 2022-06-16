@@ -1,6 +1,8 @@
 export const refs = {
     weatherFormEl: document.querySelector('.weather-form'),
+    cityChangerOverlay: document.querySelector('.city-changer-overlay'),
     cityChangerBtnEl: document.querySelector('.city-changer-btn'),
+    cityChangerCloseBtnEl: document.querySelector('.city-changer-close-btn'),
 
     heroWeatherOutletEl: document.querySelector('.weather-data-outlet'),
     weatherLargeIconOutletEl: document.querySelector('.weather-large-icon-wrapper'),

@@ -104,13 +104,18 @@
                 <svg class="city-icon" width="23" height="31">
                   <use href="./img/sprite.svg#icon-geo-location-icon"></use>
                 </svg>
-                <button type="button" class="city-changer-btn hidden">
-                  Змінити місто?
-                </button>
-                <form name="weather-form" class="weather-form hidden" novalidate>
-                  <input type="text" name="city" class="city-name-input" placeholder="Місто - регіон">
-                  <button class="weather-btn" type="submit">Ок</button>
-                </form>
+
+                  <button type="button" class="city-changer-btn">
+                    Змінити місто?
+                  </button>
+                  <div class="city-changer-overlay hidden">
+                    <button type="button" class="city-changer-close-btn"></button>
+                    <form name="weather-form" class="weather-form" novalidate>
+                      <input type="text" name="city" class="city-name-input" placeholder="Місто - регіон">
+                      <button class="weather-btn" type="submit">Ок</button>
+                    </form>
+                  </div> 
+                
               </div>
               
               <div class="weather-data-outlet">
@@ -409,13 +414,13 @@
               </li>
             </ul>
           </nav>
-          <div class="language-menu">
+          <!-- <div class="language-menu">
             <select name="language-interface" class="language-interface">
               <option value="ua">UA</option>
               <option value="eng">ENG</option>
               <option value="ru">RU</option>
           </select>
-        </div>
+        </div> -->
           <div class="phone-wrapper">
             <button type="button" class="phone-btn phone-btn__color-light">
               <svg width="28" height="28">

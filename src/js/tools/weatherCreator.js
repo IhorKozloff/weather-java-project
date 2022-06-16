@@ -9,7 +9,6 @@ export function weatherCreator (data) {
 
         <div class="title-wrapper">
             <div class="tittle-text-wrapper" style="display: flex;">
-                <span class="tittle-city-mark">г.</span>
                 <p class="city-tittle">${data.name}</p>
             </div>
         </div>
