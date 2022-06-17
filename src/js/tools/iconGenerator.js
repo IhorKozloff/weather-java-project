@@ -25,10 +25,17 @@ export function iconGenerator (weather) {
 
             case [
                 "небольшой дождь",
-                "легкий дощ",
-                "light rain"
+                "легкий дощ", "помірний дощ",
+                "light rain", "moderate rain"
             ].find(item => item === weather):
             return "background-rain";
+
+            case [
+                "сильный дождь",
+                "сильний дощ",
+                "heavy intensity rain"
+            ].find(item => item === weather):
+            return "background-hevy-rain";
 
             default:
             return "background-no-icon";

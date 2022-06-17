@@ -1,13 +1,17 @@
 @import '../../utils/constants';
 
 .link-list {
+    width: 471px;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // margin-right: 128px;
 }
-.link-item {
-    &:not(:last-child) {
-        margin-right: 40px;
-    }
-}
+// .link-item {
+//     &:not(:last-child) {
+//         margin-right: 40px;
+//     }
+// }
 .item-link {
     font-size: 18px;
     line-height: 1.16;

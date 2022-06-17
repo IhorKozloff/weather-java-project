@@ -9,7 +9,7 @@
   </head>
   <body>
     <header id="headerSection" class="header-section">
-
+      <a name="link_to_contacts"></a>
         <div class="container header-container">
           <div class="logo-wrapper">
             <p class="logo"><span>W</span>-Clear</p>
@@ -20,16 +20,16 @@
           <nav>
             <ul class="link-list">
               <li class="link-item">
-                <a href="#" class="item-link">Погода</a>
+                <a href="#link_to_current-weather" class="item-link">Погода</a>
               </li>
               <li class="link-item">
                 <a href="#section_about" class="item-link">Про нас</a>
               </li>
               <li class="link-item">
-                <a href="#" class="item-link">Надійність</a>
+                <a href="#link_to_reliability" class="item-link">Надійність</a>
               </li>
               <li class="link-item">
-                <a href="#" class="item-link">Контакти</a>
+                <a href="#link_to_contacts" class="item-link">Контакти</a>
               </li>
             </ul>
           </nav>
@@ -40,13 +40,13 @@
                 <option value="ru">RU</option>
             </select>
           </div>
-          <div class="phone-wrapper">
+
             <button type="button" class="phone-btn">
               <svg width="28" height="28">
                 <use href="./img/sprite.svg#icon-phone-tube"></use>
               </svg>
             </button>
-          </div>
+
 
 
           <div class="burger-menu-wrapper">
@@ -93,7 +93,10 @@
               <p class="hero-about">
                 Правдива погода допоможе швидко та без зусиль скласти плани на майбутнє, зустрічі з друзями чи відпочинок на природі.
               </p>
-              <button type="button" class="hero-btn">Дивитися</button>
+              <a href="#link_to_current-weather">
+                <button type="button" class="hero-btn">Дивитися</button>
+              </a>
+              
             </div>
 
 
@@ -133,28 +136,28 @@
           <div class="stripe-decor"></div>
           <ul class="social-links-list">
             <li class="social-links-item">
-              <a href="#" class="social-link">
+              <a href="https://web.telegram.org" target="blank" class="social-link">
                 <svg class="social-link-icon" width="30" height="30">
                   <use href="./img/sprite.svg#icon-telegram-icon"></use>
                 </svg>
               </a>
             </li>
             <li class="social-links-item">
-              <a href="#" class="social-link">
+              <a href="https://www.instagram.com/" target="blank" class="social-link">
                 <svg class="social-link-icon" width="30" height="30">
                   <use href="./img/sprite.svg#icon-instagram-icon"></use>
                 </svg>
               </a>
             </li>
             <li class="social-links-item">
-              <a href="#" class="social-link">
+              <a href="https://vk.com" target="blank" class="social-link">
                 <svg class="social-link-icon" width="30" height="30">
                   <use href="./img/sprite.svg#icon-vk-icon"></use>
                 </svg>
               </a>
             </li>
             <li class="social-links-item">
-              <a href="#" class="social-link">
+              <a href="https://www.facebook.com" target="blank" class="social-link">
                 <svg class="social-link-icon" width="30" height="30">
                   <use href="./img/sprite.svg#icon-facebook-icon"></use>
                 </svg>
@@ -332,6 +335,7 @@
         </div>
       </section> -->
       <section class="current-weather-section">
+        <a name="link_to_current-weather"></a>
         <div class="container">
           <div class="current-weather-outlet">
             
@@ -350,7 +354,8 @@
               <div class="ppl-image-wrapper">
                   <img src="../src/img/ppl.jpg" width="570" height="380" alt="people">
               </div>
-              <ul class="about-text-wrapper">
+              <div class="about-text-wrapper">
+                <ul>
                   <li class="about-text">
                   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
                   </li>
@@ -362,6 +367,7 @@
                   versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing.      
                   </li>
               </ul>
+              </div>
           </div>
       </div>
       </section>
@@ -369,7 +375,7 @@
     </main>
 
     <footer id="footerSection" class="footer-section">
-    
+      <a name="link_to_reliability"></a>
       <div class="container footer-container">
         <button type="button" class="footer-secondary-inform-btn">
           <svg width="180" height="54" class="secondary-inform-bt-icon">
@@ -401,33 +407,27 @@
           <nav>
             <ul class="link-list ">
               <li class="link-item">
-                <a href="#" class="item-link">Погода</a>
+                <a href="#link_to_current-weather" class="item-link">Погода</a>
               </li>
               <li class="link-item">
-                <a href="#" class="item-link">Про нас</a>
+                <a href="#section_about" class="item-link">Про нас</a>
               </li>
               <li class="link-item">
-                <a href="#" class="item-link">Надійність</a>
+                <a href="#link_to_reliability" class="item-link">Надійність</a>
               </li>
               <li class="link-item">
-                <a href="#" class="item-link">Контакти</a>
+                <a href="#link_to_contacts" class="item-link">Контакти</a>
               </li>
             </ul>
           </nav>
-          <!-- <div class="language-menu">
-            <select name="language-interface" class="language-interface">
-              <option value="ua">UA</option>
-              <option value="eng">ENG</option>
-              <option value="ru">RU</option>
-          </select>
-        </div> -->
-          <div class="phone-wrapper">
+
+
             <button type="button" class="phone-btn phone-btn__color-light">
               <svg width="28" height="28">
                 <use href="./img/sprite.svg#icon-phone-tube"></use>
               </svg>
             </button>
-          </div>
+
         </div>
         
       </div>
@@ -435,28 +435,28 @@
         <div class="stripe-decor"></div>
         <ul class="social-links-list">
           <li class="social-links-item">
-            <a href="#" class="social-link">
+            <a href="https://web.telegram.org" target="blank" class="social-link">
               <svg class="social-link-icon" width="30" height="30">
                 <use href="./img/sprite.svg#icon-telegram-icon"></use>
               </svg>
             </a>
           </li>
           <li class="social-links-item">
-            <a href="#" class="social-link">
+            <a href="https://www.instagram.com" target="blank" class="social-link">
               <svg class="social-link-icon" width="30" height="30">
                 <use href="./img/sprite.svg#icon-instagram-icon"></use>
               </svg>
             </a>
           </li>
           <li class="social-links-item">
-            <a href="#" class="social-link">
+            <a href="https://vk.com" target="blank" class="social-link">
               <svg class="social-link-icon" width="30" height="30">
                 <use href="./img/sprite.svg#icon-vk-icon"></use>
               </svg>
             </a>
           </li>
           <li class="social-links-item">
-            <a href="#" class="social-link">
+            <a href="https://www.facebook.com" target="blank" class="social-link">
               <svg class="social-link-icon" width="30" height="30">
                 <use href="./img/sprite.svg#icon-facebook-icon"></use>
               </svg>

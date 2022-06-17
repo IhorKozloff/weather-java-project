@@ -1,8 +1,11 @@
 import { refs } from '../constants/refs';
 import { iconGenerator } from '../tools/iconGenerator';
 
+const moment = require('moment')
+
+
 export function weatherCreator (data) {
-    console.log(data)
+
     const description = data.weather[0].description
 
     refs.heroWeatherOutletEl.innerHTML = `
@@ -26,7 +29,7 @@ export function weatherCreator (data) {
        
     `;
     refs.currentWeatherOutletEl.innerHTML = `
-        <span class="date">Дата:${data.dt}</span>
+        <span class="date">Дата:${moment(Date.now()).locale("ru").format('L')}</span>
         <span class="wind">Ветер: ${data.wind.speed} м/с</span>
         <span class="humidity">Влажность: ${data.main.humidity} %</span>
         <span class="visibility">Видимость: ${data.visibility / 1000} км</span>

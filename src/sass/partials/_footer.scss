@@ -135,3 +135,47 @@
         background-position: bottom -12 left -3, bottom  right -12, center, center right -25;
     }
 }
+.footer__winter-time {
+    background-image: 
+        url('../img/footer-wallpapers/footer_winter/footer-winter-decor-wallpapers-left.svg'),
+        url('../img/footer-wallpapers/footer_winter/footer-winter-decor-wallpapers-right.svg'),
+        linear-gradient(rgba(0, 16, 56, 0.45), rgba(0, 16, 56, 0.45)),
+        url('../img/footer-wall-min.jpg')
+    ;
+    background-repeat: no-repeat;
+    background-position: bottom -12 left -3, bottom  right -5, center, center;
+    background-size: 144px, 94px 84px, cover, cover;
+
+    &.footer-section__extended-text{
+        background-image: 
+            url('../img/footer-wallpapers/footer_winter/footer-winter-decor-wallpapers-left.svg'),
+            url('../img/footer-wallpapers/footer_winter/footer-winter-decor-wallpapers-right.svg'),
+            linear-gradient(rgba(0, 16, 56, 0.45), rgba(0, 16, 56, 0.45)),
+            url('../img/footer-wall-with-extra-text-min.jpg')
+        ;
+        background-position: bottom -12 left -3, bottom  right -12, center, center right -25;
+    }
+}
+.footer__spring-time {
+    background-image: 
+        url('../img/footer-wallpapers/footer_spring/footer-spring-decor-wallpapers-left.svg'),
+        url('../img/footer-wallpapers/footer_spring/footer-spring-decor-wallpapers-bottom-right.svg'),
+        url('../img/footer-wallpapers/footer_spring/footer-spring-decor-wallpapers-top-right.svg'),
+        linear-gradient(rgba(0, 16, 56, 0.45), rgba(0, 16, 56, 0.45)),
+        url('../img/footer-wall-min.jpg')
+    ;
+    background-repeat: no-repeat;
+    background-position: bottom -12 left -3, bottom  right -5, top 145 right -15, center, center;
+    background-size: 116px 113px, 161px 156px, 90px 100px,cover, cover;
+
+    &.footer-section__extended-text{
+        background-image: 
+        url('../img/footer-wallpapers/footer_spring/footer-spring-decor-wallpapers-left.svg'),
+        url('../img/footer-wallpapers/footer_spring/footer-spring-decor-wallpapers-bottom-right.svg'),
+        url('../img/footer-wallpapers/footer_spring/footer-spring-decor-wallpapers-top-right.svg'),
+            linear-gradient(rgba(0, 16, 56, 0.45), rgba(0, 16, 56, 0.45)),
+            url('../img/footer-wall-with-extra-text-min.jpg')
+        ;
+        background-position: bottom -12 left -3, bottom  right -5, top 145 right -15, center, center right -25;
+    }
+}

@@ -47,8 +47,12 @@ ul {
     padding: 0;
     list-style: none;
 }
+button {
+    outline: none;
+
+}
 .container {
-    max-width: 1231px;
+    max-width: 1171px;
     margin: 0 auto;
     // background-color: rgb(247, 148, 160);
     display: flex;

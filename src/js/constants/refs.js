@@ -25,6 +25,7 @@ export const refs = {
 
 
     lenguageSwitcher: document.querySelector('.language-interface'),
+    lenguageOtions: document.querySelectorAll('.language-interface option'),
 
     navigationEl: document.querySelectorAll('nav'),
     menuSeasonsSwitcher: document.querySelector('.season-theme-switcher-wrapper'),

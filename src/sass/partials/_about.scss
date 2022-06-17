@@ -25,11 +25,11 @@ h2 {
 }
 .about-text-wrapper {
     width: 570px;
+    box-sizing: border-box;
     margin-top: 119px;
     padding: 31px 26px;
     background: linear-gradient(110.89deg, rgba(121, 222, 244, 0.32) 6.2%, rgba(121, 222, 244, 0.32) 6.21%, rgba(255, 251, 164, 0.32) 25.48%, rgba(255, 251, 164, 0.32) 40.95%, rgba(121, 222, 244, 0.32) 94.08%);
     border-radius: 20px;
-   
 }
 .about-text {
     font-size: 18px;
@@ -37,7 +37,7 @@ h2 {
     letter-spacing: 0.02em;
     text-indent: 50px;
     &:not(:last-child) {
-        margin-bottom: 10px;
+        margin-bottom: 23px;
     }
 }
 .about__summer-time {
@@ -62,23 +62,34 @@ h2 {
 
     background-repeat: no-repeat;
     background-position: top 320 left -13, top -82 left 870, bottom 80 right;
-    background-size: 132px 148px, 120px 152px, 121px 181px;
+    background-size: 175px, 113px 109px, 120px;
 
     padding: 115px 0 110px 0;
 }
 .about__winter-time {
+    background-image: 
+    url('../img/about-wallpapers/about_winter/about-winter-decor-wallpapers-left.svg'),
+    url('../img/about-wallpapers/about_winter/about-winter-decor-wallpapers-center.svg'),
+    url('../img/about-wallpapers/about_winter/about-winter-decor-wallpapers-right.svg')
+    ;
+
 
     background-repeat: no-repeat;
-    background-position: top 320 left -13, top -82 left 870, bottom 80 right;
+    background-position: top 235 left -25, top -63 left 755, bottom 25 right;
     background-size: 132px 148px, 120px 152px, 121px 181px;
 
     padding: 115px 0 110px 0;
 }
 .about__spring-time {
+    background-image: 
+        url('../img/about-wallpapers/about_spring/about-spring-decor-wallpapers-left.svg'),
+        url('../img/about-wallpapers/about_spring/about-spring-decor-wallpapers-center.svg'),
+        url('../img/about-wallpapers/about_spring/about-spring-decor-wallpapers-right.svg')
+    ;
 
     background-repeat: no-repeat;
-    background-position: top 320 left -13, top -82 left 870, bottom 80 right;
-    background-size: 132px 148px, 120px 152px, 121px 181px;
+    background-position: top 284 left, top -62 left 870, bottom 116 right;
+    background-size: 241px 201px, 118px 104px, 114px 100px;
 
     padding: 115px 0 110px 0;
 }

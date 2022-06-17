@@ -1,5 +1,11 @@
 .language-menu {
     @include dfcc;
+    width: 121px;
+    height: 36px;
+    margin-right: 20px;
+    background-color: $smallButton;
+    text-align: center;
+    border-radius: 10px;
 }
 
 .language-interface {
