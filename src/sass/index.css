@@ -551,12 +551,11 @@ h2 span {
 .footer-section {
   background-image: linear-gradient(rgba(0, 16, 56, 0.45), rgba(0, 16, 56, 0.45)), url("../img/footer-wall-min.jpg");
   background-repeat: no-repeat;
-  background-position: center;
   background-size: cover;
 }
 .footer-section.footer-section__extended-text {
   background-image: linear-gradient(rgba(0, 16, 56, 0.45), rgba(0, 16, 56, 0.45)), url("../img/footer-wall-with-extra-text-min.jpg");
-  background-position: center, center right -25;
+  background-position: center, left top;
 }
 
 .footer-container {
@@ -570,7 +569,7 @@ h2 span {
 
 .footer-secondary-inform-btn {
   position: absolute;
-  right: 110;
+  right: 70;
   top: 100;
   width: 180px;
   height: 54px;

@@ -4,48 +4,48 @@ import { getWeather } from '../tools/getWeather';
 const NavBarUa = `
 <ul class="link-list">
     <li class="link-item">
-        <a href="#" class="item-link">Погода</a>
+        <a href="#current-weather" class="item-link">Погода</a>
     </li>
     <li class="link-item">
-        <a href="#section_about" class="item-link">Про нас</a>
+        <a href="#about-us" class="item-link">Про нас</a>
     </li>
     <li class="link-item">
-        <a href="#" class="item-link">Надійність</a>
+        <a href="#reliability" class="item-link">Надійність</a>
     </li>
     <li class="link-item">
-        <a href="#" class="item-link">Контакти</a>
+        <a href="#contacts" class="item-link">Контакти</a>
     </li>
 </ul>
 `;
 const navBarEng = `
 <ul class="link-list">
     <li class="link-item">
-        <a href="#" class="item-link">Weather</a>
+        <a href="#current-weather" class="item-link">Weather</a>
     </li>
     <li class="link-item">
-        <a href="#section_about" class="item-link">About us</a>
+        <a href="#about-us" class="item-link">About us</a>
     </li>
     <li class="link-item">
-        <a href="#" class="item-link">Reliability</a>
+        <a href="#reliability" class="item-link">Reliability</a>
     </li>
     <li class="link-item">
-        <a href="#" class="item-link">Contacts</a>
+        <a href="#contacts" class="item-link">Contacts</a>
     </li>
 </ul>
 `;
 const navBarRu = `
 <ul class="link-list">
     <li class="link-item">
-        <a href="#" class="item-link">Погода</a>
+        <a href="#current-weather" class="item-link">Погода</a>
     </li>
     <li class="link-item">
-        <a href="#section_about" class="item-link">Про нас</a>
+        <a href="#about-us" class="item-link">Про нас</a>
     </li>
     <li class="link-item">
-        <a href="#" class="item-link">Надежность</a>
+        <a href="#reliability" class="item-link">Надежность</a>
     </li>
     <li class="link-item">
-        <a href="#" class="item-link">Контакты</a>
+        <a href="#contacts" class="item-link">Контакты</a>
     </li>
 </ul>
 `;
@@ -84,7 +84,10 @@ export function LanguageSwitcher () {
                 <p class="hero-about">
                     Правдива погода допоможе швидко та без зусиль скласти плани на майбутнє, зустрічі з друзями чи відпочинок на природі.
                 </p>
-                <button type="button" class="hero-btn">Дивитися</button>
+                <a href="#current-weather">
+                    <button type="button" class="hero-btn">Дивитися</button>
+                </a>
+                
             `;
             refs.aboutTittleOutletEl.innerHTML = `
                 <h2 class="about-tittle">Дружня <span>спільнота</span></h2>
@@ -112,7 +115,10 @@ export function LanguageSwitcher () {
                 <p class="hero-about">
                     True weather will help you quickly and effortlessly make plans for the future, meet friends or relax in nature.
                 </p>
-                <button type="button" class="hero-btn">Watch</button>
+                <a href="#current-weather">
+                    <button type="button" class="hero-btn">Watch</button>
+                </a>
+                
             `;
             refs.aboutTittleOutletEl.innerHTML = `
                 <h2 class="about-tittle">Friendly <span>community</span></h2>
@@ -142,7 +148,10 @@ export function LanguageSwitcher () {
                     <p class="hero-about">
                     Правдивая погода поможет быстро и без усилий составить планы на будующее, встречи с друзьями или отдых на природе.
                     </p>
-                    <button type="button" class="hero-btn">Смотреть</button>
+                    <a href="#current-weather">
+                        <button type="button" class="hero-btn">Смотреть</button>
+                    </a>
+                    
                 `;
                 refs.aboutTittleOutletEl.innerHTML = `
                     <h2 class="about-tittle">Дружное <span>сообщество</span></h2>
