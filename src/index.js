@@ -12,21 +12,27 @@ async function onStart () {
     const currentLang = localStorage.getItem("userLanguage");
     const currentSeasonTheme = localStorage.getItem("userTheme");
 
-    if (!currentLang) {
-        localStorage.setItem("userLanguage", "ua");
-        LanguageSwitcher();
-    } else {
-        LanguageSwitcher();
+    function setLanguage () {
+        if (!currentLang) {
+            localStorage.setItem("userLanguage", "ua");
+            LanguageSwitcher();
+        } else {
+            LanguageSwitcher();
+        }
     }
     
-    if (!currentSeasonTheme) {
-        localStorage.setItem("userTheme", "noTheme");
-        seasonThemeSwitcher();
-    } else {
-        seasonThemeSwitcher();
+    function setTheme () {
+        if (!currentSeasonTheme) {
+            localStorage.setItem("userTheme", "noTheme");
+            seasonThemeSwitcher();
+        } else {
+            seasonThemeSwitcher();
+        }
     }
 
 
+    setLanguage();
+    setTheme();
     getWeather(); 
     console.log(refs.lenguageOtions)
 };

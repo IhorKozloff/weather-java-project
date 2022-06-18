@@ -12,9 +12,9 @@ function classListSwitcher (elementId, addedClasses) {
 export function seasonThemeSwitcher () {
 
     const currentSeasonTheme = localStorage.getItem("userTheme")
-console.log(refs.seasonThemeOptionsEl)
 
     refs.seasonThemeOptionsEl.forEach(item => {
+        item.removeAttribute("selected");
         if (item.value === currentSeasonTheme) {
             item.setAttribute("selected", true);
             return

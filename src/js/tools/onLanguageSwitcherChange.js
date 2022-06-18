@@ -51,61 +51,33 @@ const navBarRu = `
 `;
 
 
-
-const seasonsMenuUa = `
-<label for="season-theme-switcher">Змінити тему</label>
-<select id="season-theme-switcher" name="themeSwitcher" class="season-theme-select">
-    <option value="noTheme">Без теми</option>
-    <option value="summer">Літо</option>
-    <option value="autumn">Осінь</option>
-    <option value="winter" >Зима</option>
-    <option value="spring">Весна</option>
-</select>
-`;
-const seasonsMenuEng = `
-<label for="season-theme-switcher">Choose a theme</label>
-<select id="season-theme-switcher" name="themeSwitcher" class="season-theme-select">
-    <option value="noTheme">No theme</option>
-    <option value="summer">Summer</option>
-    <option value="autumn">Autumn</option>
-    <option value="winter" >Winter</option>
-    <option value="spring">Spring</option>
-</select>
-`;
-const seasonsMenuRu = `
-<label for="season-theme-switcher">Выбрать тему</label>
-<select id="season-theme-switcher" name="themeSwitcher" class="season-theme-select">
-    <option value="noTheme">Без темы</option>
-    <option value="summer">Лето</option>
-    <option value="autumn">Осень</option>
-    <option value="winter" >Зима</option>
-    <option value="spring">Весна</option>
-</select>
-`;
-
-
-
-
 export function LanguageSwitcher () {
 
     const language = localStorage.getItem("userLanguage");
 
     refs.lenguageOtions.forEach(item => {
+        item.removeAttribute("selected");
         if (item.value === language) {
+
             item.setAttribute("selected", true);
             return
         }
     });
-    
+    console.log (refs.navigationEl)
     switch (language) {
+       
         case 'ua':
             
-            for (item of refs.navigationEl)
-            {
+            refs.navigationEl.forEach(item => {
                 item.innerHTML = NavBarUa;
-            }
+            });
 
-            refs.menuSeasonsSwitcher.innerHTML = seasonsMenuUa;
+            refs.seasonThemeLabel.textContent = "Змінити тему"
+            refs.seasonThemeOptionsEl[0].textContent = "Без теми";
+            refs.seasonThemeOptionsEl[1].textContent = "Літо";
+            refs.seasonThemeOptionsEl[2].textContent = "Осінь";
+            refs.seasonThemeOptionsEl[3].textContent = "Зима";
+            refs.seasonThemeOptionsEl[4].textContent = "Весна";
 
             refs.heroTittlePanel.innerHTML = `
                 <h1 class="hero-tittle">Погода - <span>плани</span> на майбутнє</h1>
@@ -124,12 +96,16 @@ export function LanguageSwitcher () {
 
             break
         case 'eng':
-            for (item of refs.navigationEl)
-            {
+            refs.navigationEl.forEach(item => {
                 item.innerHTML = navBarEng;
-            }
+            });
 
-            refs.menuSeasonsSwitcher.innerHTML = seasonsMenuEng;
+            refs.seasonThemeLabel.textContent = "Change theme"
+            refs.seasonThemeOptionsEl[0].textContent = "No theme";
+            refs.seasonThemeOptionsEl[1].textContent = "Summer";
+            refs.seasonThemeOptionsEl[2].textContent = "Autumn";
+            refs.seasonThemeOptionsEl[3].textContent = "Winter";
+            refs.seasonThemeOptionsEl[4].textContent = "Spring";
 
             refs.heroTittlePanel.innerHTML = `
                 <h1 class="hero-tittle">Weather - <span>plans</span> for the future</h1>
@@ -150,12 +126,16 @@ export function LanguageSwitcher () {
 
             case 'ru':
             
-                for (item of refs.navigationEl)
-                {
+                refs.navigationEl.forEach(item => {
                     item.innerHTML = navBarRu;
-                }
+                });
     
-                refs.menuSeasonsSwitcher.innerHTML = seasonsMenuRu;
+                refs.seasonThemeLabel.textContent = "Изменть тему"
+                refs.seasonThemeOptionsEl[0].textContent = "Без темы";
+                refs.seasonThemeOptionsEl[1].textContent = "Лето";
+                refs.seasonThemeOptionsEl[2].textContent = "Осень";
+                refs.seasonThemeOptionsEl[3].textContent = "Зима";
+                refs.seasonThemeOptionsEl[4].textContent = "Весна";
     
                 refs.heroTittlePanel.innerHTML = `
                     <h1 class="hero-tittle">Погода - <span>планы</span> на будущее</h1>
