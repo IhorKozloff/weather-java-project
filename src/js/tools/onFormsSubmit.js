@@ -16,6 +16,8 @@ export async function onSearchFormSubmit (event) {
 export function onSeasonThemeFormSubmit (event) {
     event.preventDefault();
     const seasonTheme = event.currentTarget.elements.themeSwitcher.value;
-    seasonThemeSwitcher(seasonTheme); 
+
+    localStorage.setItem("userTheme", seasonTheme)
+    seasonThemeSwitcher(); 
 };
 

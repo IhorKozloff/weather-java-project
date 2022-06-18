@@ -1,3 +1,6 @@
+import { refs } from '../constants/refs';
+
+
 function classListSwitcher (elementId, addedClasses) {
     const domElement = document.querySelector(elementId); 
     domElement.classList.value = '';
@@ -6,9 +9,19 @@ function classListSwitcher (elementId, addedClasses) {
 }
 
 
-export function seasonThemeSwitcher (params) {
+export function seasonThemeSwitcher () {
 
-    switch (params) {
+    const currentSeasonTheme = localStorage.getItem("userTheme")
+console.log(refs.seasonThemeOptionsEl)
+
+    refs.seasonThemeOptionsEl.forEach(item => {
+        if (item.value === currentSeasonTheme) {
+            item.setAttribute("selected", true);
+            return
+        }
+    });
+
+    switch (currentSeasonTheme) {
         case "summer":
             classListSwitcher('#headerSection','header__summer-time')
             classListSwitcher('#aboutSection','about__summer-time')
