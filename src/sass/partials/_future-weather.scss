@@ -1,0 +1,24 @@
+@import '../utils/constants';
+
+.future-weather-section{
+    padding-top: 110px;
+    padding-bottom: 110px;
+}
+
+.future-weather-container {
+    border: 1px solid black;
+    height: 544px;
+    flex-direction: column;
+    background-image: url('../img/future-sect-wallpaper.jpg');
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: right;
+    background-position: right bottom;
+}
+h2 {
+    margin-bottom: 60px;
+    & span {
+        color: $primaryColorDark;
+    }
+}
+

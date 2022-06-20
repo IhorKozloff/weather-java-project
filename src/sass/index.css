@@ -562,6 +562,29 @@ h2 span {
   padding: 115px 0 110px 0;
 }
 
+.future-weather-section {
+  padding-top: 110px;
+  padding-bottom: 110px;
+}
+
+.future-weather-container {
+  border: 1px solid black;
+  height: 544px;
+  flex-direction: column;
+  background-image: url("../img/future-sect-wallpaper.jpg");
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: right;
+  background-position: right bottom;
+}
+
+h2 {
+  margin-bottom: 60px;
+}
+h2 span {
+  color: #006D85;
+}
+
 .footer-section {
   background-image: linear-gradient(rgba(0, 16, 56, 0.45), rgba(0, 16, 56, 0.45)), url("../img/footer-wall-min.jpg");
   background-repeat: no-repeat;
@@ -697,7 +720,7 @@ h2 span {
   bottom: 0;
   right: 0;
   left: 0;
-  background-image: linear-gradient(rgba(0, 16, 56, 0.45), rgba(0, 16, 56, 0.45));
+  background-image: linear-gradient(rgba(0, 16, 56, 0.75), rgba(0, 16, 56, 0.75));
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
