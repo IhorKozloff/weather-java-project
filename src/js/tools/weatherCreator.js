@@ -10,33 +10,71 @@ export function weatherCreator (data) {
 
     refs.heroWeatherOutletEl.innerHTML = `
 
-        <div class="title-wrapper">
-            <div class="tittle-text-wrapper" style="display: flex;">
-                <p class="city-tittle">${data.name}</p>
+        <div class="current-weather-preview-content-wrapper ${iconGenerator(description)}">
+
+            <div class="city-name-wrapper"">
+                <p class="city-name">${data.name}</p>
+            </div>
+
+
+            
+
+            <div class="current-weather-lower-content">
+                <div class="current-weather-temperature-wrapper">
+                    <span class="current-weather-temperature">${Math.round(data.main.temp)}</span>
+                </div>
+                <p class="current-weather-description">${description}</p>
+            </div>
+        
+
+        </div>
+    `;
+    
+    
+    
+    refs.currentWeatherOutletEl.innerHTML = `
+        <div class="weather-preview">
+            <span class="current-weather-date">Дата:${moment(Date.now()).locale("ru").format('L')}</span>
+            <div class="current-weather-preview-content-wrapper ${iconGenerator(description)}">
+    
+                <div class="city-name-wrapper"">
+                    <p class="city-name">${data.name}</p>
+                </div>
+    
+    
+                
+    
+                <div class="current-weather-lower-content">
+                    <div class="current-weather-temperature-wrapper">
+                        <span class="current-weather-temperature">${Math.round(data.main.temp)}</span>
+                    </div>
+                    <p class="current-weather-description">${description}</p>
+                </div>
+            
+    
             </div>
         </div>
     
-        <div class="weather-large-icon-wrapper">
-            <div class="weather-large-icon ${iconGenerator(description)}"></div>
-        </div>
-
-    
-        <p class="weather-description">${description}</p>
-
-        <div class="current-temperature-wrapper">
-            <span class="current-temperature">${Math.round(data.main.temp)}</span>
-        </div>
-       
-    `;
-    refs.currentWeatherOutletEl.innerHTML = `
-        <span class="date">Дата:${moment(Date.now()).locale("ru").format('L')}</span>
-        <span class="wind">Ветер: ${data.wind.speed} м/с</span>
-        <span class="humidity">Влажность: ${data.main.humidity} %</span>
-        <span class="visibility">Видимость: ${data.visibility / 1000} км</span>
-        <span class="clouds">Облачность: ${data.clouds.all} %</span>
-        <span class="pressure">Давление: ${data.main.pressure} hPa</span>
-        <span class="max-temp">Максимальная температура: ${data.main.temp_min} deg</span>
-        <span class="min-temp">Минимальная температура: ${data.main.temp_min} deg</span>
+        <ul class="current-weather-list">
+            <li class="current-weather-item current-weather-item__background-wind-left">
+                <span class="wind">Ветер: ${data.wind.speed} м/с</span>
+            </li>
+            <li class="current-weather-item current-weather-item__background-arc">
+                <span class="visibility">Видимость: ${data.visibility / 1000} км</span>
+            </li>
+            <li class="current-weather-item current-weather-item__background-wind-right">
+                <span class="pressure">Давление: ${Math.round(data.main.pressure / 1.33)} мм.рт.ст.</span>
+            </li>
+            <li class="current-weather-item current-weather-item__background-wind-left rotated">
+                <span class="humidity">Влажность: ${data.main.humidity} %</span>
+            </li>
+            <li class="current-weather-item current-weather-item__background-arc rotated">
+                <span class="clouds">Облачность: ${data.clouds.all} %</span>
+            </li>
+            <li class="current-weather-item current-weather-item__background-wind-right rotated qqqqqq">
+                <span class="min-max-temp">Мин - Макс: ${Math.round(data.main.temp_min)} - ${Math.round(data.main.temp_max)} deg</span>
+            </li>
+        </ul>
     `;
     refs.cityChangerBtnEl.classList.remove('hidden')
 

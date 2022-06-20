@@ -9,6 +9,7 @@ body {
 
 section {
   max-width: 1600px;
+  box-sizing: border-box;
 }
 
 header, footer {
@@ -297,14 +298,13 @@ nav {
 
 .hero-container {
   flex-direction: column;
+  margin-bottom: 171px;
 }
 
 .main-hero-content {
+  width: 100%;
   display: flex;
-}
-
-.hero-tittle-panel-wrapper {
-  margin-right: 126px;
+  justify-content: space-between;
 }
 
 h1 {
@@ -340,18 +340,18 @@ h1 {
   position: relative;
 }
 
+.control-bar {
+  position: absolute;
+  top: 30;
+  left: 50;
+  margin-left: 85px;
+  z-index: 2;
+}
+
 .weather-panel-city-wrapper {
   display: flex;
   align-items: center;
   margin-bottom: 134px;
-}
-
-.city-icon {
-  fill: #A5EFFF;
-  cursor: pointer;
-}
-.city-icon:hover {
-  fill: #c81313;
 }
 
 .city-control-bar {
@@ -361,19 +361,20 @@ h1 {
 
 .title-wrapper {
   position: absolute;
-  top: 0;
-  left: 36;
+  top: 12;
+  left: 118;
 }
 
 .tittle-text-wrapper {
-  font-size: 25px;
-  line-height: 1.16;
+  font-size: 20px;
+  line-height: 1.15;
   color: #FFF;
 }
 
 .city-changer-btn {
   width: 110px;
   height: 30px;
+  margin-left: 10px;
   border: none;
   background: none;
   padding: 0;
@@ -418,8 +419,8 @@ h1 {
   width: 230px;
   height: 230px;
   position: absolute;
-  bottom: 50;
-  left: 90;
+  bottom: 70;
+  left: 193;
 }
 
 .weather-large-icon {
@@ -434,6 +435,19 @@ h1 {
   bottom: 13;
   left: 120;
   color: #FFF;
+}
+
+.weather-data-outlet {
+  width: 346px;
+  height: 100%;
+  position: relative;
+}
+.weather-data-outlet .current-weather-preview-content-wrapper {
+  color: #FFF;
+  width: 389px;
+  position: absolute;
+  left: 57px;
+  top: 0;
 }
 
 .hero__summer-time {
@@ -694,8 +708,8 @@ h2 span {
 .weather-form {
   position: absolute;
   z-index: 1001;
-  top: 275;
-  left: 950;
+  top: 170;
+  left: 1050;
 }
 
 .weather-btn {
@@ -738,8 +752,8 @@ h2 span {
   background-size: contain;
   border: none;
   position: absolute;
-  top: 255;
-  right: 165;
+  top: 150;
+  right: 60;
   z-index: 1001;
   cursor: pointer;
 }
@@ -771,10 +785,68 @@ h2 span {
   background-image: url("/src/img/description-icons/svg_heavy-rain.svg");
 }
 
+.current-weather-section {
+  background-image: url("../img/current-section-wallpapers/current-weather-wallpaper.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 60px 0;
+  height: 414px;
+}
+
 .current-weather-outlet {
+  width: 100%;
   display: flex;
-  justify-content: start;
-  flex-direction: column;
+  justify-content: right;
+  align-items: flex-end;
+  position: relative;
+}
+.current-weather-outlet .weather-preview {
+  position: absolute;
+  left: -128px;
+  top: 0;
+}
+
+.current-weather-list {
+  width: 771px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  font-size: 15px;
+  line-height: 1.16;
+}
+
+.current-weather-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 97px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.current-weather-item.current-weather-item__background-wind-left {
+  width: 229px;
+  background-image: url("../img/current-section-wallpapers/current/weather-data-list-item-wallpaper-wind-left.svg");
+}
+.current-weather-item.current-weather-item__background-wind-left.rotated {
+  background-image: url("../img/current-section-wallpapers/rotated/weather-data-list-item-wallpaper-wind-left-rotated.svg");
+}
+.current-weather-item.current-weather-item__background-wind-right {
+  width: 232px;
+  background-image: url("../img/current-section-wallpapers/current/weather-data-list-item-wallpaper-wind-right.svg");
+}
+.current-weather-item.current-weather-item__background-wind-right.rotated {
+  background-image: url("../img/current-section-wallpapers/rotated/weather-data-list-item-wallpaper-wind-right-rotated.svg");
+}
+.current-weather-item.current-weather-item__background-arc {
+  width: 250px;
+  margin-left: 30px;
+  margin-right: 30px;
+  background-image: url("../img/current-section-wallpapers/current/weather-data-list-item-wallpaper-arc.svg");
+}
+.current-weather-item.current-weather-item__background-arc.rotated {
+  background-image: url("../img/current-section-wallpapers/rotated/weather-data-list-item-wallpaper-arc-rotated.svg");
+  background-position: center bottom;
 }
 
 .season-theme {
@@ -804,4 +876,73 @@ h2 span {
 }
 .season-theme-confirm-btn:active {
   transform: scale(0.9);
+}
+
+.weather-preview {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  color: #FFF;
+  height: 295px;
+  padding-right: 32px;
+}
+
+.current-weather-date {
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 121.4%;
+  letter-spacing: 0.02em;
+}
+
+.current-weather-preview-content-wrapper {
+  margin-right: 110px;
+  width: 389px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+.city-name-wrapper {
+  height: 25px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-image: url("../img/location-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center left;
+  margin-top: 8px;
+  margin-left: 81px;
+}
+
+.city-name {
+  font-size: 20px;
+  line-height: 1.15px;
+  margin-left: 29px;
+}
+
+.current-weather-lower-content {
+  display: flex;
+  align-items: flex-end;
+}
+
+.current-weather-description {
+  margin-bottom: 13px;
+}
+
+.current-weather-temperature-wrapper {
+  padding-right: 21px;
+  background-image: url("../img/hero-wallpapers/svg_degrees_how_wallpaper.svg");
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+.current-weather-temperature {
+  font-weight: 500;
+  font-size: 90px;
+  line-height: 103px;
 }/*# sourceMappingURL=index.css.map */

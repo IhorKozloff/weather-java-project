@@ -16,8 +16,8 @@
 .weather-form {
     position: absolute;
     z-index: 1001;
-    top: 275;
-    left: 950;
+    top: 170;
+    left: 1050;
 }
 
 .weather-btn {
@@ -47,10 +47,6 @@
     border-radius: 10px;
     border: none;
     outline: none;
-    // font-size: 12px;
-    // line-height: 1.16;
-    // color: red;
-    // opacity: 0.5;
 }
 .city-changer-close-btn {
     width: 20px;
@@ -62,8 +58,8 @@
     background-size: contain;
     border: none;
     position: absolute;
-    top: 255;
-    right: 165;
+    top: 150;
+    right: 60;
     z-index: 1001;
     cursor: pointer;
     &:active {

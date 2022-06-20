@@ -1,5 +1,66 @@
-.current-weather-outlet {
-    display: flex;
-    justify-content: start;
-    flex-direction: column;
+.current-weather-section {
+    background-image: url('../img/current-section-wallpapers/current-weather-wallpaper.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 60px 0;
+    height: 414px;
 }
+
+
+.current-weather-outlet {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+    position: relative;
+    & .weather-preview {
+        position: absolute;
+        left: -128px;
+        top: 0;
+    }
+}
+
+.current-weather-list {
+    width: 771px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    font-size: 15px;
+    line-height: 1.16;
+}
+.current-weather-item {
+    @include dfcc;
+    height: 97px;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    &.current-weather-item__background-wind-left {
+        width: 229px;
+        background-image: url('../img/current-section-wallpapers/current/weather-data-list-item-wallpaper-wind-left.svg');
+        &.rotated {
+            background-image: url('../img/current-section-wallpapers/rotated/weather-data-list-item-wallpaper-wind-left-rotated.svg');
+        }
+    }
+    &.current-weather-item__background-wind-right {
+        width: 232px;
+        background-image: url('../img/current-section-wallpapers/current/weather-data-list-item-wallpaper-wind-right.svg');
+        &.rotated {
+            background-image: url('../img/current-section-wallpapers/rotated/weather-data-list-item-wallpaper-wind-right-rotated.svg');
+            
+        }
+    }
+    &.current-weather-item__background-arc {
+        width: 250px;
+        margin-left: 30px;
+        margin-right: 30px;
+        background-image: url('../img/current-section-wallpapers/current/weather-data-list-item-wallpaper-arc.svg');
+        &.rotated {
+            background-image: url('../img/current-section-wallpapers/rotated/weather-data-list-item-wallpaper-arc-rotated.svg');
+            background-position: center bottom;
+        }
+    }
+}
+
+
+

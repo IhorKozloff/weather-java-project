@@ -1,0 +1,64 @@
+@import '../../utils/constants';
+
+.weather-preview {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    color: #FFF;
+    height: 295px;
+    padding-right: 32px;
+}
+.current-weather-date {
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 121.4%;
+    letter-spacing: 0.02em;
+}
+.current-weather-preview-content-wrapper {
+    margin-right: 110px;
+    width: 389px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+.city-name-wrapper {
+    height: 25px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-image: url('../img/location-icon.svg');
+    background-repeat: no-repeat;
+    background-position: center left;
+    margin-top: 8px;
+    margin-left: 81px;
+}
+.city-name {
+    font-size: 20px;
+    line-height: 1.15px;
+    margin-left: 29px;
+}
+
+.current-weather-lower-content {
+    display: flex;
+    align-items: flex-end;
+}
+.current-weather-description {
+    margin-bottom: 13px;
+}
+.current-weather-temperature-wrapper {
+
+    padding-right: 21px;
+    background-image: url('../img/hero-wallpapers/svg_degrees_how_wallpaper.svg');
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+.current-weather-temperature {
+    font-weight: 500;
+    font-size: 90px;
+    line-height: 103px;
+}
