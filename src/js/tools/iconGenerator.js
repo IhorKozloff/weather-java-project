@@ -1,4 +1,3 @@
-
 export function iconGenerator (weather) {
 
     switch (weather) {

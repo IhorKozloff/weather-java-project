@@ -1,4 +1,4 @@
-import { refs } from "../constants/refs";
+import { refs } from "../constants";
 import { getCurrentWeather } from "../tools/API";
 import { weatherCreator } from "../tools/weatherCreator";
 

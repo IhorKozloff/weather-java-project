@@ -1,4 +1,4 @@
-import { refs } from './js/constants/refs';
+import { refs } from './js/constants';
 import { onCityChangerClick, onCityChangerOverlayCloseBtn, onCloseOverlayEscBtn } from './js/tools/onCityChangerClick';
 import { onSearchFormSubmit, onSeasonThemeFormSubmit } from './js/tools/onFormsSubmit';
 import { onBurgerOpenBtn, onBurgerCloseBtn } from './js/tools/burgerMenuFunc';

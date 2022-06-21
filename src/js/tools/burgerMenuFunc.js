@@ -1,5 +1,5 @@
-import { refs } from '../constants/refs';
-
+import {refs} from '../constants';
+console.log(refs.burgerMenuEl)
 
 export function onBurgerOpenBtn () {
     refs.burgerMenuEl.classList.add('active');

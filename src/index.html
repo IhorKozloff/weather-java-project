@@ -45,13 +45,13 @@
                   <form name="seasons-theme-form" class="theme-form" autocomplete="off" novalidate>
                     <button type="button" class="modal-menu-close-btn"></button>
                     <div class="season-theme-switcher-wrapper">
-                      <label for="season-theme-switcher">Змінити тему</label>
+                      <label for="season-theme-switcher"></label>
                       <select id="season-theme-switcher" name="themeSwitcher" class="season-theme-select">
-                        <option value="noTheme" selected>Без теми</option>
-                        <option value="summer">Літо</option>
-                        <option value="autumn">Осінь</option>
-                        <option value="winter" >Зима</option>
-                        <option value="spring">Весна</option>
+                        <option value="noTheme" selected></option>
+                        <option value="summer"></option>
+                        <option value="autumn"></option>
+                        <option value="winter" ></option>
+                        <option value="spring"></option>
                       </select>
                     </div>
                       
@@ -92,8 +92,12 @@
                   <div class="city-changer-overlay hidden">
                     <button type="button" class="city-changer-close-btn"></button>
                     <form name="weather-form" class="weather-form" novalidate>
+                      <p class="form-tittle">Введите название города в поле для поиска</p>
                       <input type="text" name="city" class="city-name-input" placeholder="Місто - регіон">
                       <button class="weather-btn" type="submit">Ок</button>
+                      <p class="form-tips">Название города можно вводить на трех языках
+                        - UA, ENG и RU. Например Київ, Kyiv, Киев.
+                      </p>
                     </form>
                   </div> 
                 
@@ -154,7 +158,7 @@
         <div class="container">
 
           <div class="current-weather-outlet">
-
+          
           </div>
         </div>
       </section>

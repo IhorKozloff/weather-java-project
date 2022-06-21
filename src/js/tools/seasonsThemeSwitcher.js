@@ -1,4 +1,4 @@
-import { refs } from '../constants/refs';
+import { refs } from '../constants';
 
 
 function classListSwitcher (elementId, addedClasses) {
@@ -6,7 +6,7 @@ function classListSwitcher (elementId, addedClasses) {
     domElement.classList.value = '';
     domElement.classList.add(addedClasses);
 
-}
+};
 
 
 export function seasonThemeSwitcher () {

@@ -35,3 +35,4 @@ export const refs = {
     aboutTittleOutletEl: document.querySelector('.about-tittle-outlet'),
     footerTittleOutletEl: document.querySelector('.footer-tittle-aoutlet'),
 }
+

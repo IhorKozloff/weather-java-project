@@ -5,7 +5,7 @@
     bottom: 0;
     right: 0;
     left: 0;
-    background-image: linear-gradient(rgba(0, 16, 56, 0.75), rgba(0, 16, 56, 0.75));
+    background-image: linear-gradient(rgba(0, 16, 56, 0.5), rgba(0, 16, 56, 0.5));
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -14,6 +14,16 @@
 }
 
 .weather-form {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    padding: 40px 20px;
+    border-radius: 10px;
+    background-color: $whiteColor;
     position: absolute;
     z-index: 1001;
     top: 170;
@@ -21,10 +31,10 @@
 }
 
 .weather-btn {
-    height: 100%;
+    height: 36px;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 111;
+    right: 12;
     background: $primaryColorDark;
     border-radius: 10px;
     padding: 10px 30px;
@@ -39,14 +49,27 @@
     }
 }
 .city-name-input {
-    width: 269px;
-    margin-left: 93px;
-    padding:13px 0 12px 15px;
+    background-color: rgb(126, 237, 237);
+    width: 100%;
+    margin: 20px 0;
+    padding: 13px 0 12px 15px;
     align-items: center;
-    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.15);
+
     border-radius: 10px;
     border: none;
     outline: none;
+    cursor: pointer;
+    transition: box-shadow 500ms ease;
+    transition: transform 500ms ease;
+    &:hover {
+        transform: scale(1.01);
+        box-shadow: 5px 5px 5px rgb(219, 217, 217);
+        transition: box-shadow 500ms ease;
+        transition: transform 500ms ease;
+    }
+    &:focus {
+        cursor: auto;
+    }
 }
 .city-changer-close-btn {
     width: 20px;
@@ -58,11 +81,20 @@
     background-size: contain;
     border: none;
     position: absolute;
-    top: 150;
-    right: 60;
-    z-index: 1001;
+    top: 175;
+    right: 175;
+    z-index: 1002;
     cursor: pointer;
+
     &:active {
         transform: scale(0.9);
     }
  }
+.form-tittle {
+    font-weight: 600;
+}
+.form-tips {
+    font-size: small;
+    font-style: italic;
+    opacity: 0.7;
+}

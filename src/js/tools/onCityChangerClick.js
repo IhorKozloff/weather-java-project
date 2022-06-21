@@ -1,4 +1,4 @@
-import { refs } from '../constants/refs';
+import { refs } from '../constants';
 
 export function closeOverlay () {
     refs.cityChangerBtnEl.classList.remove('hidden');
@@ -20,10 +20,6 @@ export function onCityChangerOverlayCloseBtn () {
     closeOverlay();
 };
 
-// export function onCityChangerOverlayCloseEsc (event) {
-//     if ( event.target)
-//     closeOverlay();
-// }
 export function onCloseOverlayEscBtn (event) {
     if ( event.code !== "Escape") {
         return

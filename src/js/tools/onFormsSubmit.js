@@ -1,4 +1,3 @@
-import { refs } from '../constants/refs';
 import { getWeather } from '../tools/getWeather';
 import { seasonThemeSwitcher } from './seasonsThemeSwitcher';
 import { closeOverlay } from './onCityChangerClick';
