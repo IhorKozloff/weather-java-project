@@ -4,10 +4,11 @@ export async function onSearchFormSubmit (event) {
     event.preventDefault();
 
     const request = event.currentTarget.elements.city.value
-    closeOverlay();
+   
+    
     getWeather(request);
 
-
+    closeOverlay();
 };
 
 export function onSeasonThemeFormSubmit (event) {

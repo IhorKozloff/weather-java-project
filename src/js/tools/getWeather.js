@@ -41,7 +41,7 @@ export async function getWeather (request) {
             } catch (error){
                 console.log('Такого города нет')
                 console.log(error)
-            }
+            } 
             return
             
 
