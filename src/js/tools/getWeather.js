@@ -1,7 +1,5 @@
 import { refs } from "../constants";
-import { getCurrentWeather } from "../tools/API";
-import { weatherCreator } from "../tools/weatherCreator";
-
+import { getCurrentWeather, weatherCreator } from "../tools";
 
 async function weatherActions (cityName) {
     const currentLanguage =  refs.lenguageSwitcher.value;

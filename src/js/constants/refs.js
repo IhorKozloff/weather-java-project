@@ -34,5 +34,7 @@ export const refs = {
     heroTittlePanel: document.querySelector('.hero-tittle-panel-wrapper'),
     aboutTittleOutletEl: document.querySelector('.about-tittle-outlet'),
     footerTittleOutletEl: document.querySelector('.footer-tittle-aoutlet'),
+
+    futureWeatherTextOutlet: document.querySelector('.future-weather-text-wrapper'),
 }
 

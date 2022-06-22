@@ -1,3 +1,5 @@
+@import '../utils/constants';
+
 .current-weather-section {
     background-image: url('../img/current-section-wallpapers/current-weather-wallpaper.jpg');
     background-repeat: no-repeat;
@@ -5,7 +7,6 @@
     padding: 60px 0;
     height: 414px;
 }
-
 
 .current-weather-outlet {
     width: 100%;
@@ -15,7 +16,7 @@
     position: relative;
     & .weather-preview {
         position: absolute;
-        left: -128px;
+        left: -100px;
         top: 0;
     }
 }
@@ -60,6 +61,33 @@
             background-position: center bottom;
         }
     }
+}
+.weather-component {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: #000749;
+}
+.weather-component-decor-line {
+    display: flex;
+    align-items: center;
+    margin: 2px 8px 0 8px;
+    & li {
+        width: 3px;
+        height: 1px;
+        border: none;
+        background-color: rgba(0, 0, 0, 0.5);
+
+    }
+    & li:not(:last-child) {
+        margin-right: 1px; 
+    }
+}
+.weather-component-value, .weather-component-inch {
+    font-size: 15px;
+    line-height: 121.4%;
+    letter-spacing: 0.02em;
+    color: $blackColor;
 }
 
 

@@ -1,6 +1,5 @@
 import { refs } from '../constants';
 
-
 function classListSwitcher (elementId, addedClasses) {
     const domElement = document.querySelector(elementId); 
     domElement.classList.value = '';

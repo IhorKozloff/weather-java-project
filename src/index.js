@@ -1,11 +1,24 @@
-import { refs } from './js/constants';
-import { onCityChangerClick, onCityChangerOverlayCloseBtn, onCloseOverlayEscBtn } from './js/tools/onCityChangerClick';
-import { onSearchFormSubmit, onSeasonThemeFormSubmit } from './js/tools/onFormsSubmit';
-import { onBurgerOpenBtn, onBurgerCloseBtn } from './js/tools/burgerMenuFunc';
-import { onInformBtnClick } from './js/tools/onFooterInformBtnClick';
-import { onLanguageSwitcherChange, LanguageSwitcher } from './js/tools/onLanguageSwitcherChange'
-import { getWeather } from './js/tools/getWeather';
-import { seasonThemeSwitcher } from './js/tools/seasonsThemeSwitcher';
+import { refs } from './js/constants'
+import { 
+    onCityChangerClick,
+    onCityChangerOverlayCloseBtn,
+    onCloseOverlayEscBtn,
+    onSearchFormSubmit,
+    onSeasonThemeFormSubmit,
+    onBurgerOpenBtn,
+    onBurgerCloseBtn,
+    onInformBtnClick,
+    onLanguageSwitcherChange,
+    LanguageSwitcher,
+    getWeather,
+    seasonThemeSwitcher
+} from './js/tools';
+// import { } from './js/tools/onFormsSubmit';
+// import {  } from './js/tools/burgerMenuFunc';
+// import {  } from './js/tools/onFooterInformBtnClick';
+// import { } from './js/tools/onLanguageSwitcherChange'
+// import { } from './js/tools/getWeather';
+// import {  } from './js/tools/seasonsThemeSwitcher';
 
 
 async function onStart () {

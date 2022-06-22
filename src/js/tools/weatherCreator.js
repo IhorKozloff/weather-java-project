@@ -66,8 +66,11 @@ export function weatherCreator (data) {
                 <span class="weather-component wind">
                     ${wind.name}
                 </span>
+                <ul class="weather-component-decor-line">
+                    <li></li><li></li><li></li><li></li>
+                </ul>
                 <span class="weather-component-value">
-                    : ${data.wind.speed}
+                    ${data.wind.speed}
                 </span>
                 <span class="weather-component-inch">
                      ${wind.inch}
@@ -79,8 +82,11 @@ export function weatherCreator (data) {
                 <span class="weather-component visibility">
                     ${visibility.name}
                 </span>
+                <ul class="weather-component-decor-line">
+                    <li></li><li></li><li></li><li></li>
+                </ul>
                 <span class="weather-component-value">
-                    : ${data.visibility / 1000}
+                     ${data.visibility / 1000}
                 </span>
                 <span class="weather-component-inch">
                     ${visibility.inch}
@@ -93,8 +99,11 @@ export function weatherCreator (data) {
                 <span class="weather-component pressure">
                     ${pressure.name}
                 </span>
+                <ul class="weather-component-decor-line">
+                    <li></li><li></li><li></li><li></li>
+                </ul>
                 <span class="weather-component-value">
-                    : ${Math.round(data.main.pressure / 1.33)}
+                     ${Math.round(data.main.pressure / 1.33)}
                 </span>
                 <span class="weather-component-inch">
                     ${pressure.inch}
@@ -107,8 +116,11 @@ export function weatherCreator (data) {
                 <span class="weather-component humidity">
                     ${humidity.name}
                 </span>
+                <ul class="weather-component-decor-line">
+                    <li></li><li></li><li></li><li></li>
+                </ul>
                 <span class="weather-component-value">
-                    : ${data.main.humidity}
+                     ${data.main.humidity}
                 </span>
                 <span class="weather-component-inch">
                      ${humidity.inch}
@@ -121,8 +133,11 @@ export function weatherCreator (data) {
                 <span class="weather-component clouds">
                     ${cloudiness.name}
                 </span>
+                <ul class="weather-component-decor-line">
+                    <li></li><li></li><li></li><li></li>
+                </ul>
                 <span class="weather-component-value">
-                    : ${data.clouds.all}
+                     ${data.clouds.all}
                 </span>
                 <span class="weather-component-inch">
                      ${cloudiness.inch}
@@ -135,8 +150,11 @@ export function weatherCreator (data) {
                 <span class="min-max-temp">
                     ${tMinMax.name}
                 </span>
+                <ul class="weather-component-decor-line">
+                    <li></li><li></li><li></li><li></li>
+                </ul>
                 <span class="weather-component-value">
-                    : ${Math.round(data.main.temp_min)} - ${Math.round(data.main.temp_max)}
+                     ${Math.round(data.main.temp_min)} - ${Math.round(data.main.temp_max)}
                 </span>
                 <span class="weather-component-inch">
                      ${tMinMax.inch}

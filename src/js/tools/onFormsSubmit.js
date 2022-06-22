@@ -1,6 +1,4 @@
-import { getWeather } from '../tools/getWeather';
-import { seasonThemeSwitcher } from './seasonsThemeSwitcher';
-import { closeOverlay } from './onCityChangerClick';
+import { getWeather, seasonThemeSwitcher, closeOverlay } from '../tools';
 
 export async function onSearchFormSubmit (event) {
     event.preventDefault();

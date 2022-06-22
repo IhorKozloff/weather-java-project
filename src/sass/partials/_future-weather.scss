@@ -1,20 +1,46 @@
 @import '../utils/constants';
 
-.future-weather-section{
-    padding-top: 110px;
-    padding-bottom: 110px;
-}
+@keyframes rotateY {
+    0% {
+      transform: perspective(800px) rotateY(0deg);
+    }
+  
+    25% {
+      transform: perspective(800px) rotateY(-10deg);
+    }
+    50% {
+        transform: perspective(800px) rotateY(0deg);
+    }
+    75% {
+        transform: perspective(800px) rotateY(10deg);
+    }
+    100% {
+        transform: perspective(800px) rotateY(0deg);
+      }
+  }
 
+.future-weather-section {
+    padding-top: 110px;
+}
 .future-weather-container {
-    border: 1px solid black;
+    // border: 1px solid black;
     height: 544px;
-    flex-direction: column;
+    align-items: center;
+}
+.future-weather-wallpaper {
+    width: 70%;
+    height: 70%;
     background-image: url('../img/future-sect-wallpaper.jpg');
     background-repeat: no-repeat;
-    background-size: 70%;
-    background-position: right;
-    background-position: right bottom;
+    background-size: 135%;
+    background-position: center;
+    // transform: perspective(800px) rotateY(-10deg);
+    animation-name: rotateY;
+    animation-duration: 6000ms;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
+
 h2 {
     margin-bottom: 60px;
     & span {
@@ -22,3 +48,30 @@ h2 {
     }
 }
 
+.future-weather-text-wrapper {
+    padding-top: 90px;
+    margin-right: 40px;
+    width: 40%;
+    height: 100%;
+    position: relative;
+    & p {
+        margin-top: 30px;
+        text-indent: 25px;
+    }
+}
+.soon-tittle {
+    width: 150px;
+    border: 4px solid red;
+    color: red;
+    text-align: center;
+    transform: rotate(-15deg);
+    padding: 10px 0;
+    margin-bottom: 50px;
+    position: absolute;
+    right: -700;
+    top: 60;
+    z-index: 2;
+}
+.text-tittle {
+    color: $primaryColorDark;
+}
