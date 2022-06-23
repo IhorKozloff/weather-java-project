@@ -23,54 +23,20 @@ nav {
     width: 31px;
     height: 36px;
     border: none;
-    cursor: pointer;
+
     &:active {
         transform: scale(0.9);
+    }
+    
+    &.hidden {
+        opacity: 0;
+        pointer-events: none;
     }
  }
  .burger-menu-icon {
     position: absolute;
     top: 5;
     left: -2;
- }
- .modal-menu-wrapper {
-    border: 1px solid black;
-    padding: 40px 10px 100px 10px;
-    position: absolute;
-    top: 0;
-    left: -2;
-    width: 150px;
-    opacity: 0;
-    transform: translateY(-50%);
-
-    transition: opacity 200ms ease, transform 1s ease;
-    background-color: #fff;
-    pointer-events: none;
-    &.active {
-        transition: opacity 100ms ease, transform 1s ease;
-        transform: translateY(0);
-        opacity: 1;
-        pointer-events: all;
-    }
-    z-index: 100;
-    
- }
- .modal-menu-close-btn {
-    width: 20px;
-    height: 20px;
-    border-radius: 10px;
-    background-image: url('../img/close-btn-icon.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    border: none;
-    position: absolute;
-    top: 5;
-    right: 5;
-    cursor: pointer;
-    &:active {
-        transform: scale(0.9);
-    }
  }
  
 

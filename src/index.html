@@ -40,26 +40,74 @@
 
           <div class="burger-menu-wrapper">
             <div class="modal-menu-wrapper">
-              <div class="season-theme">
-                <div class="select-wrapper">
-                  <form name="seasons-theme-form" class="theme-form" autocomplete="off" novalidate>
-                    <button type="button" class="modal-menu-close-btn"></button>
-                    <div class="season-theme-switcher-wrapper">
-                      <label for="season-theme-switcher"></label>
-                      <select id="season-theme-switcher" name="themeSwitcher" class="season-theme-select">
-                        <option value="noTheme" selected></option>
-                        <option value="summer"></option>
-                        <option value="autumn"></option>
-                        <option value="winter" ></option>
-                        <option value="spring"></option>
-                      </select>
-                    </div>
-                      
-                    <button type="submit" class="season-theme-confirm-btn" >Ок</button>
-                  </form>
-                </div>
+
+              <button type="button" class="modal-menu-close-btn">
+                  <svg width="20" height="20">
+                    <use href="./img/sprite.svg#icon-modal-close-btn"></use>
+                  </svg>
+              </button>
+
+
+              <div class="season-theme"> 
+                <span class="modal-menu-items-tittle">
+                  Змінити тему
+                </span>
+                <form name="seasons-theme-form" class="theme-form" autocomplete="off" novalidate>                   
+                  <ul id="season-theme-switcher" name="themeSwitcher" class="season-theme-options-list">
+
+                        <li class="season-theme-options-item" data-value="winter">
+
+                            <svg width="20" height="21" class="theme-icon">
+                              <use href="./img/sprite.svg#icon-winter"></use>
+                            </svg>
+
+                        </li>
+                        <li class="season-theme-options-item" data-value="spring">
+
+                            <svg width="20" height="21" class="theme-icon">
+                              <use href="./img/sprite.svg#icon-spring"></use>
+                            </svg>
+
+                        </li>
+                        <li class="season-theme-options-item active" data-value="summer">
+
+                            <svg width="20" height="21" class="theme-icon">
+                              <use href="./img/sprite.svg#icon-summer"></use>
+                            </svg>
+
+                        </li>
+                        
+                        <li class="season-theme-options-item" data-value="autumn">
+
+                            <svg width="20" height="21" class="theme-icon">
+                              <use href="./img/sprite.svg#icon-autumn"></use>
+                            </svg>
+
+                        </li>
+                       
+                  </ul>
+                </form>
+
                 
+              
+
               </div>
+
+
+              <div class="phone-bar-wrapper">
+                <span class="modal-menu-items-tittle">
+                  Зателефонувати
+                </span>
+                <div class="phone-bar">
+                  <button type="button" class="phone-bar-btn">
+                    <svg width="18" height="20">
+                      <use href="./img/sprite.svg#icon-phone-tube"></use>
+                    </svg>
+                  </button>
+                  <span class="phone-bar-number">+380 (99) 355 55 33</span>
+                </div>
+              </div>
+              
             </div>  
 
             <button class="burger-menu-btn" type="button">

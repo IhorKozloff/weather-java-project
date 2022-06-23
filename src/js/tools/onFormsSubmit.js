@@ -11,11 +11,11 @@ export async function onSearchFormSubmit (event) {
     closeOverlay();
 };
 
-export function onSeasonThemeFormSubmit (event) {
-    event.preventDefault();
-    const seasonTheme = event.currentTarget.elements.themeSwitcher.value;
-
-    localStorage.setItem("userTheme", seasonTheme)
-    seasonThemeSwitcher(); 
+export function onSeasonThemeListClick (event) {
+    if (event.target.nodeName !== "LI") {
+        return;
+    }
+    const currentWeatherVaue = event.target.dataset.value;
+    localStorage.setItem("userTheme", currentWeatherVaue);
+    seasonThemeSwitcher();
 };
-

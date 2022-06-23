@@ -14,8 +14,9 @@ export const refs = {
     burgerMenuCloseBtnEl: document.querySelector('.modal-menu-close-btn'),
 
     seasonThemeFormEl: document.querySelector('.theme-form'),
-    seasonThemeLabel: document.querySelector('.theme-form label'),
-    seasonThemeOptionsEl :document.querySelectorAll('#season-theme-switcher option'),
+    seasonThemeLabel: document.querySelector('.modal-menu-items-tittle'),
+    seasonThemeListEl: document.querySelector('#season-theme-switcher'),
+    seasonThemeOptionsEl: document.querySelectorAll('.season-theme-options-item'),
 
     headerSectionEl: document.querySelector('#headerSection'),
     heroSectionEl: document.querySelector('#heroSection'),

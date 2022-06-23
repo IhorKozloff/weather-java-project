@@ -1,0 +1,54 @@
+@import '../../utils/constants';
+
+.season-theme {
+   margin-bottom: 24px;
+}
+
+
+.season-theme-options-list {
+    display: flex;
+    justify-content: start;
+    height: 28px;
+}
+.season-theme-options-item {
+   @include dfcc;
+   width: 40px;
+   background-color: $whiteColor;
+   border-top: 0.5px solid $primaryColorDark;
+   border-bottom: 0.5px solid $primaryColorDark;
+
+   &:not(:last-child), :not(:last-child) {
+      border-right: 0.5px solid $primaryColorDark;
+      border-left: 0.5px solid $primaryColorDark;
+   }
+
+   &:first-child {
+      border-right: none;
+      border-left: 0.5px solid $primaryColorDark;
+      border-top-left-radius: 25px;
+      border-bottom-left-radius: 25px;
+   }
+
+   &:last-child {
+      border-right: 0.5px solid $primaryColorDark;
+      border-top-right-radius: 25px;
+      border-bottom-right-radius: 25px;
+   }
+   &:active {
+      transform: scale(0.9);
+   }
+   & button {
+      @include dfcc;
+      padding: 0;
+      border: none;
+      background: none;
+   }
+   &.active {
+      background: #4EB11F;
+      opacity: 0.75;
+   }
+}
+
+.theme-icon {
+   pointer-events: none;
+}

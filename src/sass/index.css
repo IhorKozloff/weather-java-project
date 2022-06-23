@@ -54,6 +54,7 @@ ul {
 
 button {
   outline: none;
+  cursor: pointer;
 }
 
 .container {
@@ -95,7 +96,6 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
 }
 .phone-btn .phone-btn__color-light {
   background-color: #A5EFFF;
@@ -132,55 +132,19 @@ nav {
   width: 31px;
   height: 36px;
   border: none;
-  cursor: pointer;
 }
 .burger-menu-btn:active {
   transform: scale(0.9);
+}
+.burger-menu-btn.hidden {
+  opacity: 0;
+  pointer-events: none;
 }
 
 .burger-menu-icon {
   position: absolute;
   top: 5;
   left: -2;
-}
-
-.modal-menu-wrapper {
-  border: 1px solid black;
-  padding: 40px 10px 100px 10px;
-  position: absolute;
-  top: 0;
-  left: -2;
-  width: 150px;
-  opacity: 0;
-  transform: translateY(-50%);
-  transition: opacity 200ms ease, transform 1s ease;
-  background-color: #fff;
-  pointer-events: none;
-  z-index: 100;
-}
-.modal-menu-wrapper.active {
-  transition: opacity 100ms ease, transform 1s ease;
-  transform: translateY(0);
-  opacity: 1;
-  pointer-events: all;
-}
-
-.modal-menu-close-btn {
-  width: 20px;
-  height: 20px;
-  border-radius: 10px;
-  background-image: url("../img/close-btn-icon.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  border: none;
-  position: absolute;
-  top: 5;
-  right: 5;
-  cursor: pointer;
-}
-.modal-menu-close-btn:active {
-  transform: scale(0.9);
 }
 
 .header__summer-time {
@@ -329,7 +293,6 @@ h1 {
   font-size: 19px;
   line-height: 1.15;
   border: none;
-  cursor: pointer;
   margin-top: 50px;
 }
 .hero-btn:active {
@@ -381,7 +344,6 @@ h1 {
   display: flex;
   justify-content: start;
   align-items: center;
-  cursor: pointer;
   color: #A5EFFF;
 }
 .city-changer-btn:hover {
@@ -686,7 +648,6 @@ h2 span {
   width: 180px;
   height: 54px;
   background: none;
-  cursor: pointer;
   border: none;
   transition: transform 2s ease;
 }
@@ -832,7 +793,6 @@ h2 span {
   line-height: 20px;
   color: #FFF;
   border: none;
-  cursor: pointer;
   transform: scale(0.9);
 }
 .weather-btn:active {
@@ -875,7 +835,6 @@ h2 span {
   top: 175;
   right: 175;
   z-index: 1002;
-  cursor: pointer;
 }
 .city-changer-close-btn:active {
   transform: scale(0.9);
@@ -1013,33 +972,143 @@ h2 span {
   color: #000;
 }
 
+.modal-menu-wrapper {
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 31px;
+  padding-bottom: 31px;
+  background-color: rgba(165, 239, 255, 0.95);
+  position: absolute;
+  top: 40;
+  left: -180;
+  opacity: 0;
+  transform: translateY(-50%);
+  transition: opacity 200ms ease, transform 1s ease;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  pointer-events: none;
+  z-index: 100;
+}
+.modal-menu-wrapper.active {
+  transition: opacity 100ms ease, transform 1s ease;
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: all;
+}
+
+.decor-wrapper {
+  display: flex;
+}
+
+.modal-menu-close-btn {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateY(-100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: rgba(165, 239, 255, 0.95);
+}
+
+.modal-menu-items-tittle {
+  font-size: 14px;
+  line-height: 1.14;
+  opacity: 0.5;
+  display: block;
+  margin-bottom: 12px;
+}
+
 .season-theme {
+  margin-bottom: 24px;
+}
+
+.season-theme-options-list {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+  justify-content: start;
+  height: 28px;
 }
 
-.theme-form {
+.season-theme-options-item {
   display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  background-color: #FFF;
+  border-top: 0.5px solid #006D85;
+  border-bottom: 0.5px solid #006D85;
 }
-
-.season-theme-select {
-  width: 85%;
-  cursor: pointer;
+.season-theme-options-item:not(:last-child), .season-theme-options-item :not(:last-child) {
+  border-right: 0.5px solid #006D85;
+  border-left: 0.5px solid #006D85;
 }
-
-.season-theme-confirm-btn {
-  border: 1px solid black;
-  background: none;
-  height: 18px;
-  margin-bottom: 2px;
-  width: 20%;
-  cursor: pointer;
+.season-theme-options-item:first-child {
+  border-right: none;
+  border-left: 0.5px solid #006D85;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
 }
-.season-theme-confirm-btn:active {
+.season-theme-options-item:last-child {
+  border-right: 0.5px solid #006D85;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+.season-theme-options-item:active {
   transform: scale(0.9);
+}
+.season-theme-options-item button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  border: none;
+  background: none;
+}
+.season-theme-options-item.active {
+  background: #4EB11F;
+  opacity: 0.75;
+}
+
+.theme-icon {
+  pointer-events: none;
+}
+
+.phone-bar {
+  position: relative;
+}
+
+.phone-bar-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 28px;
+  border: 0.5px solid #006D85;
+  border-radius: 10px;
+  background-color: #FFF;
+  position: absolute;
+}
+.phone-bar-btn:active {
+  transform: scale(0.9);
+}
+
+.phone-bar-number {
+  display: flex;
+  padding-left: 40px;
+  align-items: center;
+  height: 28px;
+  font-size: 12px;
+  line-height: 121.4%;
+  letter-spacing: 0.02em;
+  color: #000749;
+  background-color: #FFF;
+  border-radius: 10px;
 }
 
 .weather-preview {

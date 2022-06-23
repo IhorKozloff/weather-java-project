@@ -42,7 +42,6 @@
     line-height: 20px;
     color: $whiteColor;
     border: none;
-    cursor: pointer;
     transform: scale(0.9);
     &:active {
         transform: scale(0.8);
@@ -84,7 +83,6 @@
     top: 175;
     right: 175;
     z-index: 1002;
-    cursor: pointer;
 
     &:active {
         transform: scale(0.9);

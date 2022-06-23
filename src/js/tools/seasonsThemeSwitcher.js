@@ -4,21 +4,24 @@ function classListSwitcher (elementId, addedClasses) {
     const domElement = document.querySelector(elementId); 
     domElement.classList.value = '';
     domElement.classList.add(addedClasses);
-
 };
 
+function activeThemeButtonSetter (data) {
+    refs.seasonThemeOptionsEl.forEach(item => {
+        item.classList.remove('active');
+    })
+    refs.seasonThemeOptionsEl.forEach(item => {
+        if (item.dataset.value === data) {
+            item.classList.add('active');
+        }
+    })
+}
 
 export function seasonThemeSwitcher () {
 
-    const currentSeasonTheme = localStorage.getItem("userTheme")
+    const currentSeasonTheme = localStorage.getItem("userTheme");
 
-    refs.seasonThemeOptionsEl.forEach(item => {
-        item.removeAttribute("selected");
-        if (item.value === currentSeasonTheme) {
-            item.setAttribute("selected", true);
-            return
-        }
-    });
+    activeThemeButtonSetter(currentSeasonTheme)
 
     switch (currentSeasonTheme) {
         case "summer":

@@ -1,0 +1,50 @@
+.modal-menu-wrapper {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 31px;
+    padding-bottom: 31px;
+    background-color: rgba(165, 239, 255, 0.95);
+    position: absolute;
+    top: 40;
+    left: -180;
+    opacity: 0;
+    transform: translateY(-50%);
+    transition: opacity 200ms ease, transform 1s ease;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    pointer-events: none;
+    &.active {
+        transition: opacity 100ms ease, transform 1s ease;
+        transform: translateY(0);
+        opacity: 1;
+        pointer-events: all;
+    }
+    z-index: 100;
+    
+}
+.decor-wrapper {
+    display: flex;
+}
+
+.modal-menu-close-btn {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateY(-100%);
+    @include dfcc;
+    border: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: rgba(165, 239, 255, 0.95);
+
+}
+.modal-menu-items-tittle {
+    font-size: 14px;
+    line-height: 1.14;
+    opacity: 0.5;
+    display: block;
+    margin-bottom: 12px;
+ }

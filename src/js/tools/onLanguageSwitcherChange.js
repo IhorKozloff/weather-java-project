@@ -1,12 +1,12 @@
 import {refs, navBarMurkUp, themeNames } from '../constants';
 import { getWeather } from '../tools';
 
-function themeLengContentMaker (data) {
-    refs.seasonThemeOptionsEl.forEach((item, index) => {
-        item.textContent = themeNames[data][index]
-        console.log(item)
-    });
-};
+// function themeLengContentMaker (data) {
+//     refs.seasonThemeOptionsEl.forEach((item, index) => {
+//         item.textContent = themeNames[data][index]
+//         console.log(item)
+//     });
+// };
 
 function lengOptionsSelector (data) {
     refs.lenguageOtions.forEach(item => {
@@ -25,7 +25,7 @@ export function LanguageSwitcher () {
     const language = localStorage.getItem("userLanguage");
 
     lengOptionsSelector(language)
-    themeLengContentMaker(language);
+    // themeLengContentMaker(language);
 
     
 

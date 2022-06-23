@@ -4,7 +4,7 @@ import {
     onCityChangerOverlayCloseBtn,
     onCloseOverlayEscBtn,
     onSearchFormSubmit,
-    onSeasonThemeFormSubmit,
+    onSeasonThemeListClick,
     onBurgerOpenBtn,
     onBurgerCloseBtn,
     onInformBtnClick,
@@ -13,13 +13,6 @@ import {
     getWeather,
     seasonThemeSwitcher
 } from './js/tools';
-// import { } from './js/tools/onFormsSubmit';
-// import {  } from './js/tools/burgerMenuFunc';
-// import {  } from './js/tools/onFooterInformBtnClick';
-// import { } from './js/tools/onLanguageSwitcherChange'
-// import { } from './js/tools/getWeather';
-// import {  } from './js/tools/seasonsThemeSwitcher';
-
 
 async function onStart () {
     const currentLang = localStorage.getItem("userLanguage");
@@ -47,14 +40,15 @@ async function onStart () {
     setLanguage();
     setTheme();
     getWeather(); 
-    console.log(refs.lenguageOtions)
 };
 
 
 
+
+
+refs.seasonThemeListEl.addEventListener('click', onSeasonThemeListClick)
 refs.burgerMenuOpenBtnEl.addEventListener('click', onBurgerOpenBtn);
 refs.burgerMenuCloseBtnEl.addEventListener('click', onBurgerCloseBtn);
-refs.seasonThemeFormEl.addEventListener('submit', onSeasonThemeFormSubmit);
 refs.weatherFormEl.addEventListener('submit', onSearchFormSubmit);
 refs.cityChangerBtnEl.addEventListener('click', onCityChangerClick);
 refs.footerInformBtn.addEventListener('click', onInformBtnClick);
