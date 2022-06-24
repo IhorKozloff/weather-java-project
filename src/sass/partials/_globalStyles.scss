@@ -10,13 +10,11 @@ body{
     margin: 0;
 }
 
-section {
+section, header, footer {
     max-width: 1600px;
     box-sizing: border-box;
 }
-header, footer {
-    max-width: 1600px;
-}
+
 footer { 
     padding-top: 95px;
     padding-bottom: 30px;
