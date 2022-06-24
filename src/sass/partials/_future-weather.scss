@@ -23,7 +23,6 @@
     padding-top: 110px;
 }
 .future-weather-container {
-    // border: 1px solid black;
     height: 544px;
     align-items: center;
 }
@@ -34,7 +33,6 @@
     background-repeat: no-repeat;
     background-size: 135%;
     background-position: center;
-    // transform: perspective(800px) rotateY(-10deg);
     animation-name: rotateY;
     animation-duration: 6000ms;
     animation-timing-function: linear;
@@ -74,4 +72,47 @@ h2 {
 }
 .text-tittle {
     color: $primaryColorDark;
+}
+
+.future__summer-time {
+
+    background-image: 
+        url('../img/future-section-wallpapers/future-summer/future-summer-decor-wallpapers-left.svg'),
+        url('../img/future-section-wallpapers/future-summer/future-summer-decor-wallpapers-right-top.svg'),
+        url('../img/future-section-wallpapers/future-summer/future-summer-decor-wallpapers-right-bottom.svg'),
+    ;
+    background-repeat: no-repeat;
+    background-position: top 55 left -60, top 20 right 500, bottom right -40;
+    background-size: 190px 116px, 52px 61px, 147px 111px;
+}
+
+.future__autumn-time {
+    background-image: 
+        url('../img/future-section-wallpapers/future-autumn/future-autumn-decor-wallpapers-left.svg'),
+        url('../img/future-section-wallpapers/future-autumn/future-autumn-decor-wallpapers-right-top.svg'),
+        url('../img/future-section-wallpapers/future-autumn/future-autumn-decor-wallpapers-right-bottom.svg'),
+    ;
+    background-repeat: no-repeat;
+    background-position: top 55 left -60, top 20 right 500, bottom right -40;
+    background-size: 190px 116px, 52px 61px, 147px 111px;
+}
+.future__winter-time {
+    background-image: 
+        url('../img/future-section-wallpapers/future-winter/future-winter-decor-wallpapers-left.svg'),
+        url('../img/future-section-wallpapers/future-winter/future-winter-decor-wallpapers-right-top.svg'),
+        url('../img/future-section-wallpapers/future-winter/future-winter-decor-wallpapers-right-bottom.svg'),
+    ;
+    background-repeat: no-repeat;
+    background-position: top 70 left -35, top 20 right 500, bottom right -40;
+    background-size: 160px 154px, 61px, 161px 156px;
+}
+.future__spring-time {
+    background-image: 
+        url('../img/future-section-wallpapers/future-spring/future-spring-decor-wallpapers-left.svg'),
+        url('../img/future-section-wallpapers/future-spring/future-spring-decor-wallpapers-right-top.svg'),
+        url('../img/future-section-wallpapers/future-spring/future-spring-decor-wallpapers-right-bottom.svg'),
+    ;
+    background-repeat: no-repeat;
+    background-position: top 155 left -30, top 20 right 500, bottom right -35;
+    background-size: 163px 136px, 67px 61px, 157px 131px;
 }

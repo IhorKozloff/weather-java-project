@@ -9,6 +9,7 @@
     display: flex;
     justify-content: start;
     height: 28px;
+    cursor: pointer;
 }
 .season-theme-options-item {
    @include dfcc;
@@ -51,4 +52,12 @@
 
 .theme-icon {
    pointer-events: none;
+}
+.theme-icon-summer {
+   &.theme-icon {
+      fill: #4EB11F;
+   }
+   &.active .theme-icon{
+      fill: $whiteColor;
+   }
 }

@@ -86,24 +86,6 @@ button {
   margin-top: 10px;
 }
 
-.phone-btn {
-  width: 70px;
-  height: 36px;
-  margin-right: 20px;
-  border: none;
-  background: rgba(168, 229, 255, 0.5);
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.phone-btn .phone-btn__color-light {
-  background-color: #A5EFFF;
-}
-.phone-btn:active {
-  transform: scale(0.9);
-}
-
 .hidden {
   opacity: 0;
   pointer-events: none;
@@ -236,7 +218,7 @@ nav {
   align-items: center;
   width: 121px;
   height: 36px;
-  margin-right: 20px;
+  margin-right: 58px;
   background-color: rgba(168, 229, 255, 0.5);
   text-align: center;
   border-radius: 10px;
@@ -622,6 +604,34 @@ h2 span {
   color: #006D85;
 }
 
+.future__summer-time {
+  background-image: url("../img/future-section-wallpapers/future-summer/future-summer-decor-wallpapers-left.svg"), url("../img/future-section-wallpapers/future-summer/future-summer-decor-wallpapers-right-top.svg"), url("../img/future-section-wallpapers/future-summer/future-summer-decor-wallpapers-right-bottom.svg");
+  background-repeat: no-repeat;
+  background-position: top 55 left -60, top 20 right 500, bottom right -40;
+  background-size: 190px 116px, 52px 61px, 147px 111px;
+}
+
+.future__autumn-time {
+  background-image: url("../img/future-section-wallpapers/future-autumn/future-autumn-decor-wallpapers-left.svg"), url("../img/future-section-wallpapers/future-autumn/future-autumn-decor-wallpapers-right-top.svg"), url("../img/future-section-wallpapers/future-autumn/future-autumn-decor-wallpapers-right-bottom.svg");
+  background-repeat: no-repeat;
+  background-position: top 55 left -60, top 20 right 500, bottom right -40;
+  background-size: 190px 116px, 52px 61px, 147px 111px;
+}
+
+.future__winter-time {
+  background-image: url("../img/future-section-wallpapers/future-winter/future-winter-decor-wallpapers-left.svg"), url("../img/future-section-wallpapers/future-winter/future-winter-decor-wallpapers-right-top.svg"), url("../img/future-section-wallpapers/future-winter/future-winter-decor-wallpapers-right-bottom.svg");
+  background-repeat: no-repeat;
+  background-position: top 70 left -35, top 20 right 500, bottom right -40;
+  background-size: 160px 154px, 61px, 161px 156px;
+}
+
+.future__spring-time {
+  background-image: url("../img/future-section-wallpapers/future-spring/future-spring-decor-wallpapers-left.svg"), url("../img/future-section-wallpapers/future-spring/future-spring-decor-wallpapers-right-top.svg"), url("../img/future-section-wallpapers/future-spring/future-spring-decor-wallpapers-right-bottom.svg");
+  background-repeat: no-repeat;
+  background-position: top 155 left -30, top 20 right 500, bottom right -35;
+  background-size: 163px 136px, 67px 61px, 157px 131px;
+}
+
 .footer-section {
   background-image: linear-gradient(rgba(0, 16, 56, 0.45), rgba(0, 16, 56, 0.45)), url("../img/footer-wall-min.jpg");
   background-repeat: no-repeat;
@@ -774,7 +784,7 @@ h2 span {
   height: 300px;
   padding: 40px 20px;
   border-radius: 10px;
-  background-color: #FFF;
+  background-color: rgba(165, 239, 255, 0.95);
   position: absolute;
   z-index: 1001;
   top: 170;
@@ -800,7 +810,7 @@ h2 span {
 }
 
 .city-name-input {
-  background-color: rgb(126, 237, 237);
+  background-color: #FFF;
   width: 100%;
   margin: 20px 0;
   padding: 13px 0 12px 15px;
@@ -972,6 +982,20 @@ h2 span {
   color: #000;
 }
 
+.modal-menu-changer-overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-image: linear-gradient(rgba(0, 16, 56, 0.5), rgba(0, 16, 56, 0.5));
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 1000;
+  transition: opacity 500ms ease;
+}
+
 .modal-menu-wrapper {
   padding-top: 20px;
   padding-left: 20px;
@@ -979,8 +1003,8 @@ h2 span {
   padding-bottom: 31px;
   background-color: rgba(165, 239, 255, 0.95);
   position: absolute;
-  top: 40;
-  left: -180;
+  top: 60;
+  right: 230;
   opacity: 0;
   transform: translateY(-50%);
   transition: opacity 200ms ease, transform 1s ease;
@@ -1033,6 +1057,7 @@ h2 span {
   display: flex;
   justify-content: start;
   height: 28px;
+  cursor: pointer;
 }
 
 .season-theme-options-item {
@@ -1077,6 +1102,13 @@ h2 span {
 
 .theme-icon {
   pointer-events: none;
+}
+
+.theme-icon-summer.theme-icon {
+  fill: #4EB11F;
+}
+.theme-icon-summer.active .theme-icon {
+  fill: #FFF;
 }
 
 .phone-bar {

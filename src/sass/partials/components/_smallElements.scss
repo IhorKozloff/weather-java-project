@@ -26,24 +26,7 @@
 }
 
 
-.phone-btn {
-    width: 70px;
-    height: 36px;
-    margin-right: 20px;
-    border: none;
-    background: $smallButton;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
-    & .phone-btn__color-light {
-        background-color: $primaryColor;
-    }
-    &:active {
-        transform: scale(0.9);
-    }
-}
 .hidden {
     opacity: 0;
     pointer-events: none;

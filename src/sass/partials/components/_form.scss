@@ -23,7 +23,7 @@
     height: 300px;
     padding: 40px 20px;
     border-radius: 10px;
-    background-color: $whiteColor;
+    background-color: rgba(165, 239, 255, 0.95);
     position: absolute;
     z-index: 1001;
     top: 170;
@@ -48,7 +48,7 @@
     }
 }
 .city-name-input {
-    background-color: rgb(126, 237, 237);
+    background-color: $whiteColor;
     width: 100%;
     margin: 20px 0;
     padding: 13px 0 12px 15px;

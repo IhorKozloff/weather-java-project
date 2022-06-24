@@ -10,18 +10,21 @@ export const refs = {
 
 
     burgerMenuEl: document.querySelector('.modal-menu-wrapper'),
+    burgerMenuOverlayBtn: document.querySelector('.modal-menu-changer-overlay'),
     burgerMenuOpenBtnEl: document.querySelector('.burger-menu-btn'),
     burgerMenuCloseBtnEl: document.querySelector('.modal-menu-close-btn'),
 
     seasonThemeFormEl: document.querySelector('.theme-form'),
-    seasonThemeLabel: document.querySelector('.modal-menu-items-tittle'),
+    seasonThemeLabel: document.querySelectorAll('.modal-menu-items-tittle'),
     seasonThemeListEl: document.querySelector('#season-theme-switcher'),
     seasonThemeOptionsEl: document.querySelectorAll('.season-theme-options-item'),
+
 
     headerSectionEl: document.querySelector('#headerSection'),
     heroSectionEl: document.querySelector('#heroSection'),
     aboutSectionEl: document.querySelector('#aboutSection'), 
     footerSectionEl: document.querySelector('#footerSection'),
+    futureSectionEl: document.querySelector('#futureWeatherSection'),
 
     footerInformBtn: document.querySelector('.footer-secondary-inform-btn'),
     secondaryInformText: document.querySelector('.secondary-text-wrapper'),

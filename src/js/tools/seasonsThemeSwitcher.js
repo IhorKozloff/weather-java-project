@@ -29,6 +29,7 @@ export function seasonThemeSwitcher () {
             classListSwitcher('#aboutSection','about__summer-time')
             classListSwitcher('#footerSection','footer__summer-time')
             classListSwitcher('#heroSection','hero__summer-time')
+            classListSwitcher('#futureWeatherSection','future__summer-time')
         break;
         
         case "autumn":
@@ -36,6 +37,7 @@ export function seasonThemeSwitcher () {
             classListSwitcher('#aboutSection','about__autumn-time')
             classListSwitcher('#footerSection','footer__autumn-time')
             classListSwitcher('#heroSection','hero__autumn-time')
+            classListSwitcher('#futureWeatherSection','future__autumn-time')
         break;
 
         case "winter":
@@ -43,6 +45,7 @@ export function seasonThemeSwitcher () {
             classListSwitcher('#aboutSection','about__winter-time')
             classListSwitcher('#footerSection','footer__winter-time')
             classListSwitcher('#heroSection','hero__winter-time')
+            classListSwitcher('#futureWeatherSection','future__winter-time')
         break;
 
         case "spring":
@@ -50,6 +53,7 @@ export function seasonThemeSwitcher () {
             classListSwitcher('#aboutSection','about__spring-time')
             classListSwitcher('#footerSection','footer__spring-time')
             classListSwitcher('#heroSection','hero__spring-time')
+            classListSwitcher('#futureWeatherSection','future__spring-time')
         break;
 
         case "noTheme":

@@ -1,12 +1,16 @@
-import {refs, navBarMurkUp, themeNames } from '../constants';
+import {refs, navBarMurkUp, modalMenuTittles } from '../constants';
 import { getWeather } from '../tools';
 
-// function themeLengContentMaker (data) {
-//     refs.seasonThemeOptionsEl.forEach((item, index) => {
-//         item.textContent = themeNames[data][index]
-//         console.log(item)
-//     });
-// };
+
+function modalMenuMiltiLang (lengData) {
+    const currentLengContent = modalMenuTittles.find(item => item.name === lengData)
+
+
+    
+    refs.seasonThemeLabel[0].textContent = currentLengContent.tittles[0]
+    refs.seasonThemeLabel[1].textContent = currentLengContent.tittles[1]
+
+}
 
 function lengOptionsSelector (data) {
     refs.lenguageOtions.forEach(item => {
@@ -24,9 +28,8 @@ export function LanguageSwitcher () {
 
     const language = localStorage.getItem("userLanguage");
 
-    lengOptionsSelector(language)
-    // themeLengContentMaker(language);
-
+    lengOptionsSelector(language);
+    modalMenuMiltiLang(language);
     
 
     switch (language) {
@@ -37,7 +40,8 @@ export function LanguageSwitcher () {
                 item.innerHTML = navBarMurkUp.ua;
             });
 
-            refs.seasonThemeLabel.textContent = "Змінити тему";
+            
+            
 
             refs.heroTittlePanel.innerHTML = `
                 <h1 class="hero-tittle">Погода - <span>плани</span> на майбутнє</h1>
