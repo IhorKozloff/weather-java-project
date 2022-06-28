@@ -48,8 +48,7 @@ h2 {
     ;
 
     background-repeat: no-repeat;
-    background-position: top 320 left -13, top -82 left 870, bottom 80 right;
-    background-size: 132px 148px, 120px 152px, 121px 181px;
+    background-position: top 320 left, top -82 left 870, bottom 80 right;
 
     padding: 115px 0 110px 0;
 }
@@ -61,22 +60,20 @@ h2 {
     ;
 
     background-repeat: no-repeat;
-    background-position: top 320 left -13, top -82 left 870, bottom 80 right;
-    background-size: 175px, 113px 109px, 120px;
+    background-position: top 320 left, top -82 left 870, bottom 80 right;
 
     padding: 115px 0 110px 0;
 }
 .about__winter-time {
     background-image: 
-    url('../img/about-wallpapers/about_winter/about-winter-decor-wallpapers-left.svg'),
-    url('../img/about-wallpapers/about_winter/about-winter-decor-wallpapers-center.svg'),
-    url('../img/about-wallpapers/about_winter/about-winter-decor-wallpapers-right.svg')
+        url('../img/about-wallpapers/about_winter/about-winter-decor-wallpapers-left.svg'),
+        url('../img/about-wallpapers/about_winter/about-winter-decor-wallpapers-center.svg'),
+        url('../img/about-wallpapers/about_winter/about-winter-decor-wallpapers-right.svg')
     ;
 
 
     background-repeat: no-repeat;
-    background-position: top 235 left -25, top -63 left 755, bottom 25 right;
-    background-size: 132px 148px, 120px 152px, 121px 181px;
+    background-position: top 235 left, top -63 left 755, bottom 25 right;
 
     padding: 115px 0 110px 0;
 }
@@ -89,7 +86,7 @@ h2 {
 
     background-repeat: no-repeat;
     background-position: top 284 left, top -62 left 870, bottom 116 right;
-    background-size: 241px 201px, 118px 104px, 114px 100px;
+
 
     padding: 115px 0 110px 0;
 }
