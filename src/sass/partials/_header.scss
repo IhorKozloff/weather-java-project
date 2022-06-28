@@ -43,7 +43,7 @@ nav {
 .header__summer-time {
     background-repeat: no-repeat;
     background-position: top left, bottom -95 left 800, top right;
-    background-size: 75px, 150px, 60px;
+
 
     background-image: 
         url('../img/header-wallpapers/header_summer/header-summer-decor-wallpapers-left.svg'),
@@ -55,7 +55,7 @@ nav {
 .header__autumn-time {
     background-repeat: no-repeat;
     background-position: top left, bottom -95 left 800, top right;
-    background-size: 75px, 150px, 60px;
+
 
     background-image: 
         url('../img/header-wallpapers/header_autumn/header-autumndecor-wallpapers-left.svg'),
@@ -67,7 +67,7 @@ nav {
 .header__winter-time {
     background-repeat: no-repeat;
     background-position: top left, bottom left 875, top right;
-    background-size: 68px, 62px, 90px 56px;
+    
 
     background-image: 
         url('../img/header-wallpapers/header_winter/header-winter-decor-wallpapers-left.svg'),
@@ -78,8 +78,7 @@ nav {
 }
 .header__spring-time {
     background-repeat: no-repeat;
-    background-position: top left -5, bottom -10 left 1025, top right -13;
-    background-size: 82px 69px, 48px 53px, 100px 83px;
+    background-position: top left, bottom -10 left 1025, top right;
 
     background-image: 
         url('../img/header-wallpapers/header_spring/header-spring-decor-wallpapers-left.svg'),
