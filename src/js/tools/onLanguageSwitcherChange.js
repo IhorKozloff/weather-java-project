@@ -124,16 +124,6 @@ export function LanguageSwitcher () {
     
                 refs.seasonThemeLabel.textContent = "Изменть тему";
     
-                // refs.heroTittlePanel.innerHTML = `
-                //     <h1 class="hero-tittle">Погода - <span>планы</span> на будущее</h1>
-                //     <p class="hero-about">
-                //         Правдивая погода поможет быстро и без усилий составить планы на будующее, встречи с друзьями или отдых на природе.
-                //     </p>
-                //     <a href="#current-weather">
-                //         <button type="button" class="hero-btn">Смотреть</button>
-                //     </a>
-                    
-                // `;
                 refs.aboutTittleOutletEl.innerHTML = `
                     <h2 class="about-tittle">Дружное <span>сообщество</span></h2>
                 `;
@@ -159,12 +149,6 @@ export function LanguageSwitcher () {
 
 
 };
-
-
-
-
-
-
 
 
 export function onLanguageSwitcherChange (event) {
